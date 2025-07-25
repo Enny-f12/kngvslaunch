@@ -1,0 +1,231 @@
+/* src/components/Hero/Hero.module.css */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slideImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* Smooth fade effect */
+  z-index: 0;
+}
+
+.slideImage.active {
+  opacity: 1;
+}
+
+.over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  /* Make the overlay darker for better text contrast */
+  background-color: rgba(0, 0, 0, 0.6); /* Adjusted: darker black with 60% opacity */
+  z-index: 1;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white; /* Keep text white for contrast */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px; /* General horizontal padding */
+  box-sizing: border-box;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.learn{
+  display: inline;
+  padding: 16px 32px;
+  background-color: var(--color-1);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
+  transition: all 0.3s ease;
+   
+  
+}
+.learn:hover{
+  background-color: #083319;
+  color: var(--color-1);
+  scale: 1.1;
+}
+.programs{
+  display: inline;
+  padding: 16px 32px;
+  background-color: none;
+  color: var(--color-1);
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid var(--color-1);  
+  
+}
+.programs:hover{
+  background-color: #083319;
+  scale: 1.1;
+  border: none;
+}
+
+.textOverlay h1 {
+  /* Initial styles for h1 */
+  font-size: 50px; /* Base font size, will be dynamic with media queries */
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 4rem;
+  max-width: 1000px; /* Optional: limit width on very large screens */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Stronger text shadow for visibility */
+
+  /* Text fade-in animation */
+  animation: fadeInText 1s ease-out forwards;
+  /* Reset animation on subsequent changes - handled in TSX by key prop */
+}
+
+/* Keyframes for text fade-in on each slide change */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Text Scaling (Media Queries) */
+@media (min-width: 1200px) { /* Larger screens */
+  .textOverlay h1 {
+    font-size: 4.5vw; /* Example: responsive font size based on viewport width */
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) { /* Desktops */
+  .textOverlay h1 {
+    font-size: 5vw;
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) { /* Tablets large */
+  .textOverlay h1 {
+    font-size: 4.5vw;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) { /* Tablets small / phones large */
+  .textOverlay h1 {
+    font-size: 4.8vw; /* Adjust for better fit on these screens */
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 576px) { /* Mobile phones */
+  .slider {
+    height: 80vh;
+    
+  }
+  .textOverlay h1 {
+    font-size: 7.5vw; /* Larger for small screens, using vw for dynamism */
+    padding: 0 10px;
+    line-height: 1.4;
+    margin-top: 1rem;
+    
+  }
+  .textOverlay{
+    gap: 2rem;
+    
+  }
+  .button{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: sticky;
+}
+.learn{
+  display: inline;
+  padding:8px 10px;
+  background-color: var(--color-1);
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
+  transition: all 0.3s ease;
+   
+  
+}
+.learn:hover{
+  background-color: #083319;
+  color: var(--color-1);
+  scale: 1.1;
+}
+.programs{
+  display: inline;
+  padding: 8px 10px;
+  background-color: none;
+  color: var(--color-1);
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--color-1);  
+  
+}
+.programs:hover{
+  background-color: #083319;
+  scale: 1.1;
+  border: none;
+}
+
+}
+
+
+/* Scroll Watcher CSS (as before) */
+.scrollWatcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-6);
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+  transform-origin: left;
+}
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}

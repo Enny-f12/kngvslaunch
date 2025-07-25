@@ -1,0 +1,235 @@
+.subsection {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+  padding: 5rem 8rem;
+  color: black;
+}
+
+#vertical_line {
+  height: 50px;
+  width: 4px;
+  background-color: var(--color-1);
+  margin-top: 10px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+}
+
+.line h2 {
+  font-size: 3rem;
+  font-family: lato;
+  font-weight: 600;
+}
+
+.subsection_text p {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-left: 38px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.frames {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 1rem;
+  margin-top: 60px;
+  margin-left: 38px;
+}
+.frames h1{
+  font-weight: 500;
+  text-align: left;
+  margin-bottom:0 ;
+  margin: 0;
+  font-size: 17px;
+  background-color:rgba(255, 255, 255, 0.957);
+  color: var(--color-1);
+  padding: 4px;
+  border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
+}
+
+
+.frames > div { /* Common styles for the frame items */
+  padding: 15px;
+  padding-top: 150px ;
+  border-radius: 10px;
+  background-color: #9b9b9b; /* Fallback color */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: start;
+  align-items: last baseline;
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
+}
+
+.nut:hover {
+  transform: scale3d(1.05, 1.05, 1.2);
+}
+
+.dev:hover {
+  transform: scale3d(1.05, 1.05, 1.2);
+}
+
+.edu:hover {
+  transform: scale3d(1.05, 1.05, 1.2);
+  
+}
+
+.dov:hover {
+  transform: scale3d(1.05, 1.05, 1.2);
+  
+}
+
+.subsection_button a {
+  color: var(--color-1);
+  font-size: 20px;
+}
+
+.subsection_button {
+  margin-top: 30px;
+  margin-left: 38px;
+}
+
+.fa-arrow-right {
+  margin-left: 16px;
+  font-size: 20px;
+  margin-top: 2px;
+  align-items: center;
+  place-items: center;
+}
+
+/* Responsive styles */
+
+@media (min-width: 480px) and (max-width: 700px) {
+  #vertical_line {
+    height: 50px;
+    width: 4px;
+    background-color: var(--color-1);
+    margin-top: 0px;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+  }
+}
+
+@media (max-width: 800px) {
+  .subsection {
+    margin: 5%;
+    margin-top: 7rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+    padding: 5rem 4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .subsection {
+    padding: 5rem 4rem;
+  }
+
+  .frames {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 1rem;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+
+  .subsection_text #vertical_line {
+    height: 4px;
+    width: 40px;
+    background-color: var(--color-1);
+    margin-top: 0px;
+  }
+
+  .subsection_text .line {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .subsection_text p {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 0px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .subsection {
+    
+    
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+    padding: 0rem 2rem;
+  }
+
+  .subsection_text .line h2 {
+    font-size: 1.7rem;
+  }
+
+  .subsection_text p {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 0px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+
+  .subsection_text #vertical_line {
+    height: 4px;
+    width: 40px;
+    background-color: var(--color-1);
+    margin-top: 0px;
+  }
+
+  .subsection_text .line {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+
+  .frames {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+}

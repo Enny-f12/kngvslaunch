@@ -1,0 +1,143 @@
+/* src/components/Sidebar/Sidebar.module.css */
+
+.menuBtn {
+  position: fixed;
+  color: #159c09; /* Use global variable */
+  font-size: 35px;
+  cursor: pointer;
+  margin: 20px;
+  transition: 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  top: -20px;
+  left: -20px;
+  z-index: 1000;
+}
+
+.sideBar {
+  background-color: var(--sidebar-bg); /* Use global variable */
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+  z-index: 999;
+}
+
+.sideBar.active {
+  left: 0;
+}
+
+.header {
+  background-color: var(--sidebar-bg); /* Use global variable */
+  padding-top: 15px;
+  text-align: center;
+}
+
+.headerImg {
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 18px;
+  color: var(--color-1); /* Use global variable */
+}
+
+.closeBtn {
+  position: absolute;
+  color: white;
+  margin: 10px;
+  font-size: 23px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  color: var(--color-1); /* Use global variable */
+}
+
+.menu {
+  width: 100%;
+  margin-top: 0px;
+  background-color: var(--sidebar-bg); /* Use global variable */
+}
+
+.menuItem {
+  position: relative;
+  cursor: pointer;
+}
+
+.itemLink {
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.itemLink:hover {
+  color: var(--color-1); /* Use global variable */
+}
+
+.itemIcon {
+  margin-right: 15px;
+  /* Specific icon colors are handled in the component via utility classes that use global variables */
+}
+
+.angleRightIcon {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.angleRightIcon.rotate {
+  transform: rotate(90deg);
+}
+
+.subMenu {
+  background-color: var(--submenu-bg); /* Use global variable */
+  display: none;
+  padding-left: 40px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+}
+
+.subMenu.subMenuOpen {
+  display: block;
+  max-height: 500px;
+}
+
+.subItemLink {
+  padding-left: 40px;
+  color: white;
+  font-size: 15px;
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.subItemLink:hover {
+  color: var(--color-1); /* Use global variable */
+}
+
+/* Icon specific colors using global variables */
+.iconDesktop { color: var(--icon-color-home); }
+.iconAbout { color: var(--icon-color-about); }
+.iconPrograms { color: var(--icon-color-programs); }
+.iconNews { color: var(--icon-color-news); }
+.iconResources { color: var(--icon-color-resources); }

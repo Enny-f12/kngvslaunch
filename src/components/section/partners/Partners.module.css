@@ -1,0 +1,219 @@
+.partners {
+  padding: 5rem 7rem;
+  margin: 4rem auto;
+  background: linear-gradient(to bottom, #ffffff, #e6f4e6, #d4efda);
+}
+
+.line {
+  display: flex;
+  gap: 10px;
+}
+
+.newsSection {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #008000;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #444;
+}
+.partners p{
+    text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardContent h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cardContent p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.cardContent a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #008000;
+  transition: color 0.3s;
+}
+
+.cardContent a:hover {
+  color: #004d00;
+}
+
+.verticalLine {
+  width: 4px;
+  height: 40px;
+  background-color: #008000;
+}
+
+.text {
+  color: black;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.text p {
+  font-size: 1.1rem;
+}
+
+/* Carousel */
+.logoSlider {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.logoSlide {
+  display: flex;
+  gap: 30px;
+  animation: scroll 15s linear infinite;
+}
+
+.logoSlide img {
+  width: 130px;
+  height: 100px;
+  object-fit: contain;
+  animation: bounceIn 3s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logoSlide img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .partners {
+    padding: 3rem 1rem;
+  }
+
+  .header h2 {
+    font-size: 1.75rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .logoSlide {
+    gap: 20px;
+  }
+
+  .logoSlide img {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    height: 160px;
+  }
+
+  .cardContent h3 {
+    font-size: 1rem;
+  }
+
+  .cardContent p {
+    font-size: 0.9rem;
+  }
+
+  .partners h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+  }
+
+  .logoSlide img {
+    width: 90px;
+    height: 70px;
+  }
+  .line {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+.verticalLine {
+  width: 40px;
+  height: 4px;
+  background-color: #008000;
+  
+}
+.partners p{
+    margin-top: 16px;
+}
+}
