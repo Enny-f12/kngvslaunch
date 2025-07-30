@@ -159,7 +159,8 @@
 @media (max-width: 480px) {
   .get_involved {
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 5rem 1rem;
+    padding-top: 0rem;
   }
 
   .get_involved_text h2 {
@@ -196,4 +197,16 @@
     background-color: #f0eded;
     border: 0.2px solid rgb(118, 117, 117);
   }
+  #vertical_line {
+  height: 5px;
+  width: 40px;
+  background-color: var(--color-1);
+  margin-top: 0px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
 }

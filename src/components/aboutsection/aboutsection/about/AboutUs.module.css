@@ -1,0 +1,106 @@
+.landing {
+  text-align: center;
+  margin-top: 5rem;
+  color: black;
+}
+
+.landing h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 7rem;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffffff, #e6f4e6, #d4efda);
+
+  color: black;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.text h3{
+  font-weight: 500;
+  font-size: 2rem;
+}
+.text p{
+  font-size: 20px;
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.verticalLine {
+  width: 4px;
+  height: 40px;
+  background-color: #159c09;
+}
+
+.text h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.text p {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+.imageWrapper {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
+}
+.image:hover{
+  scale:1.07;
+}
+@media (max-width: 768px) {
+  .landing h1 {
+    font-size: 36px;
+  }
+
+  .text h3 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .verticalLine {
+    height: 4px;
+    width: 40px;
+  }
+
+  .line {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}

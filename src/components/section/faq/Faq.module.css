@@ -113,18 +113,41 @@ color: white;
 
 @media (max-width: 480px) {
   .container {
-    padding: 5rem 2rem;
+    padding: 0rem 1.5rem;
+    margin-top: 2rem;
   }
-
+  .container p{
+    font-size: 16px;
+  }
   .accordion {
     font-size: 17px;
-    padding: 1rem;
+    padding: 0.7rem;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
   }
-
+.faq{
+    border-radius: 4px;
+}
+ .fap{
+    font-size: 16px;
+ }
   .accordion p {
     text-align: left;
-    width: 90%;
+    width: 91%;
+    font-size: 16px;
   }
+  #vertical_line {
+  height: 5px;
+  width: 40px;
+  background-color: var(--color-1);
+  margin-top: 10px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
 }

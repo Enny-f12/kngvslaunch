@@ -12,7 +12,7 @@
 .logo {
   height: 100px;
   width: 100px;
-  background-color: #1c2e1a;
+  
 }
 
 .caps {
@@ -100,14 +100,18 @@
 @media (max-width: 600px) {
   .footer {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    gap: 2rem;
+    
   }
-
+.caps{
+    margin-bottom: -70px;
+}
   .phase {
     justify-content: center;
   }
 
   .socialLinks ul {
-    justify-content: center;
+    justify-content: start;
   }
 }

@@ -27,7 +27,7 @@
 }
 
 .header p {
-  font-size: 1rem;
+  font-size: 20px;
   color: #444;
 }
 .partners p{
@@ -89,6 +89,7 @@
   width: 4px;
   height: 40px;
   background-color: #008000;
+  margin-top: 10px;
 }
 
 .text {
@@ -102,7 +103,7 @@
 }
 
 .text p {
-  font-size: 1.1rem;
+  font-size: 20px;
 }
 
 /* Carousel */
@@ -177,6 +178,11 @@
 }
 
 @media (max-width: 480px) {
+    .partners {
+  padding: 5rem 1.7rem;
+  margin: 4rem auto;
+  background: linear-gradient(to bottom, #ffffff, #e6f4e6, #d4efda);
+}
   .card img {
     height: 160px;
   }
@@ -205,7 +211,7 @@
   .line {
   display: flex;
   flex-direction: column-reverse;
-  gap: 8px;
+  gap: 1px;
 }
 .verticalLine {
   width: 40px;
@@ -213,6 +219,14 @@
   background-color: #008000;
   
 }
+.logoSlide img {
+  width: 130px;
+  height: 110px;
+  object-fit: contain;
+  animation: bounceIn 2s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
 .partners p{
     margin-top: 16px;
 }

@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
           healthier, greener future for our children as we "catch them young".
         </p>
         <div className={styles.buttonWrapper}>
-          <a href="/aboutus" className={styles.cta}>
+          <a href="/about" className={styles.cta}>
             Learn more <FaArrowRight size={16} color="#159c09" />
           </a>
         </div>

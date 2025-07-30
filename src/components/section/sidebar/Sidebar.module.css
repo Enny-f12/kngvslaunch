@@ -1,115 +1,178 @@
-.menuBtn {
-  position: fixed;
-  color: var(--color-1);
-  font-size: 40px;
-  cursor: pointer;
-  margin: 30px;
-  top: -20px;
-  left: -20px;
-  z-index: 1000;
-  font-weight: 500;
-}
-
-.sidebar {
-  background-color: #083319;
-  width: 250px;
-  height: 100vh;
+.sidebarWrapper {
   position: fixed;
   top: 0;
-  left: -250px;
-  overflow-y: auto;
-  transition: 0.6s ease;
-  z-index: 1000;
-}
-
-.active {
   left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 40;
+  overflow-y: auto;
 }
 
-.header {
-  padding-top: 15px;
-  background-color: #1b1a1b;
+.open {
+  transform: translateX(0);
+}
+
+.sidebarHeader {
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.logoImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #00c2ff;
+}
+
+.logoText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00c2ff;
+  text-align: center;
+}
+
+.menuContainer {
+  padding: 1rem 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menuItem:hover {
+  color: #00c2ff;
+}
+
+.menuItemWrapper {
   position: relative;
 }
 
-.header img {
-  width: 100px;
-  margin: 30px auto 15px;
+.submenuButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menuLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.submenuContainer {
+  background-color: #2a2a2a;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.submenuOpen {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.submenuClosed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.submenuLink {
   display: block;
-  border-radius: 50%;
+  padding: 0.75rem 2.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.submenuLink:hover {
+  color: #00c2ff;
+}
+
+.menuBtn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .closeBtn {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 23px;
-  color: var(--color-1);
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
   cursor: pointer;
 }
 
-.header h1 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--color-1);
-  padding-bottom: 18px;
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 30;
 }
 
-.menu {
-  background-color: #1b1a1b;
+.iconPurple {
+  color: #a78bfa;
 }
 
-.item {
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  
+.iconPink {
+  color: #f472b6;
 }
 
-.item a {
-  color: white;
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px 30px;
-  line-height: 60px;
+.iconBlue {
+  color: #60a5fa;
 }
 
-.item a:hover {
-  color: var(--color-1);
+.iconRed {
+  color: #f87171;
 }
 
-.item i {
-  margin-right: 15px;
+.iconYellow {
+  color: #facc15;
 }
-
-.subMenu {
-  background-color: #262627;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.subMenu a {
-  padding: 10px 0 10px 20px;
-  color: white;
-  font-size: 15px;
-}
-
-.subMenu a:hover {
-  color: var(--color-1);
-}
-
-.rotate {
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
-}
-
-/* Icon Colors */
-.fa-desktop { color: #9c0992; }
-.fa-circle-question { color: #fc4982; }
-.fa-elementor { color: #316ff6; }
-.fa-book-open { color: #ebfd61; }
-.fa-newspaper { color: #6e0202; }
