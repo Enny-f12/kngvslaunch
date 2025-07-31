@@ -1,0 +1,80 @@
+.wrapper {
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+.years {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.years button {
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.years button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  .years {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .years button {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

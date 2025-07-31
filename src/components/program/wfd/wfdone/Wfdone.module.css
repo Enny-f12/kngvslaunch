@@ -1,0 +1,93 @@
+.wrapper {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.intro {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.intro h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #00897b;
+}
+
+.iconArrow {
+  margin-right: 10px;
+  color: #ff6f00;
+}
+
+.intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #ff6f00;
+  margin-top: 2rem;
+}
+
+.years {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.years a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e0f2f1;
+  color: #004d40;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #004d40;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.years a:hover {
+  background-color: #004d40;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    padding: 0 1rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .years a {
+    width: 80%;
+    justify-content: center;
+  }
+}

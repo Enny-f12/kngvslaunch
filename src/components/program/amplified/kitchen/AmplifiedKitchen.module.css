@@ -1,0 +1,99 @@
+/* AmplifiedKitchen.module.css */
+
+.kitchenSection {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.kitchenHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.kitchenHeader h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.kitchenContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kitchenText {
+  flex: 1 1 50%;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.kitchenImage {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.kitchenImage img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .kitchenContent {
+    flex-direction: column;
+  }
+}
+
+/* RecipeGallery.module.css */
+
+.recipeSection {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.recipeSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.recipeSection p {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+}
+
+.galleryTitle {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #16a085;
+  margin-bottom: 2rem;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galleryGrid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galleryGrid img:hover {
+  transform: scale(1.03);
+}

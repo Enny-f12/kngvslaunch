@@ -6,10 +6,12 @@
   box-shadow: 0 4px 10px rgba(21, 156, 9, 0.6);
   margin: auto;
   margin-top: 5rem;
-  padding: 4rem;
+  padding: 4rem 6rem;
   align-items: center;
   justify-content: center;
-  background-color: #083319;
+  background:linear-gradient(135deg, hsl(142 76% 36%), hsl(88 75% 20%));
+  
+  
   color: rgb(249, 241, 241);
   place-items: center;
   border-radius: 8px;

@@ -1,0 +1,173 @@
+/* --- Global Styles & Fonts --- */
+/* These variables and body styles would ideally be in a global stylesheet (e.g., index.css) */
+:root {
+  --primary-color: #159c09;
+  --secondary-color: #f59e0b; /* A warm, complementary accent */
+  --dark-text: #1f2937;
+  --light-text: #4b5563;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+}
+
+/* --- Main Wrapper --- */
+.exhibitionWrapper {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* --- Utility Classes --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark-text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle span {
+  color: var(--primary-color);
+}
+
+.sectionSubtitle {
+  font-size: 1.125rem;
+  color: var(--light-text);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.75;
+}
+
+/* --- Hero Section --- */
+.heroSection {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--bg-white);
+  padding: 2rem;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 156, 9, 0.7); /* Primary color overlay */
+  z-index: -1;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.heroContent p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    max-width: 600px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* --- Content Sections --- */
+.contentSection {
+  background-color: var(--bg-light);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.textBlock p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--light-text);
+  margin-bottom: 1.5rem;
+}
+
+.textBlock p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Image Gallery Styles --- */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleryImage:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+.singleImageSection {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.singleImage {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+/* --- Responsive --- */
+@media (min-width: 768px) {
+  .contentGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .textBlock.reverse {
+    order: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionTitle {
+    font-size: 3rem;
+  }
+  .heroContent h1 {
+    font-size: 4.5rem;
+  }
+}

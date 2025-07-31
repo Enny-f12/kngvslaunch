@@ -1,0 +1,232 @@
+.activitiesContainer {
+  padding: 4rem 2rem;
+  background: hsl(var(--background));
+  position: relative;
+}
+
+.activitiesWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.activityCard {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: var(--gradient-card);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.activityCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-strong);
+}
+
+.activityCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+}
+
+.activityCard:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.activityCard:nth-child(even)::before {
+  background: var(--gradient-secondary);
+}
+
+.activityCard:nth-child(3n)::before {
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+}
+
+.activityImageContainer {
+  flex: 0 0 400px;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.activityImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.activityCard:hover .activityImage {
+  transform: scale(1.05);
+}
+
+.activityContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activityTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: hsl(var(--primary));
+  margin: 0;
+  position: relative;
+}
+
+.activityTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.activityCard:nth-child(even) .activityTitle::after {
+  background: var(--gradient-secondary);
+}
+
+.activityCard:nth-child(3n) .activityTitle::after {
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+}
+
+.activityDescription {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: hsl(var(--foreground));
+  margin: 0;
+  text-align: justify;
+}
+
+.activityIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: hsl(var(--primary-foreground));
+  box-shadow: var(--shadow-soft);
+}
+
+.activityCard:nth-child(even) .activityIcon {
+  background: var(--gradient-secondary);
+}
+
+.activityCard:nth-child(3n) .activityIcon {
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .activitiesContainer {
+    padding: 3rem 1.5rem;
+  }
+
+  .activitiesWrapper {
+    gap: 3rem;
+  }
+
+  .activityCard {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .activityImageContainer {
+    flex: 0 0 300px;
+  }
+
+  .activityImage {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activitiesContainer {
+    padding: 2rem 1rem;
+  }
+
+  .activitiesWrapper {
+    gap: 2.5rem;
+  }
+
+  .activityCard,
+  .activityCard:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .activityImageContainer {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .activityImage {
+    height: 250px;
+  }
+
+  .activityContent {
+    gap: 1rem;
+  }
+
+  .activityIcon {
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .activitiesContainer {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .activitiesWrapper {
+    gap: 2rem;
+  }
+
+  .activityCard {
+    padding: 1rem;
+  }
+
+  .activityImageContainer {
+    max-width: 300px;
+  }
+
+  .activityImage {
+    height: 200px;
+  }
+
+  .activityIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}

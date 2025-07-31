@@ -1,0 +1,247 @@
+.partnersContainer {
+  padding: 4rem 2rem;
+  background: var(--gradient-card);
+  position: relative;
+}
+
+.partnersContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.02), hsl(var(--accent) / 0.02));
+  pointer-events: none;
+}
+
+.partnersWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.partnersTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  color: hsl(var(--primary));
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.partnersTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.partnersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.partnerCard {
+  background: hsl(var(--card));
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-bounce);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.partnerCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-primary);
+  border-radius: var(--radius);
+  padding: 2px;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.partnerCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-glow);
+}
+
+.partnerCard:hover::before {
+  opacity: 1;
+}
+
+.partnerCard:nth-child(even):hover {
+  box-shadow: 0 0 30px hsl(var(--secondary) / 0.3);
+}
+
+.partnerCard:nth-child(3n):hover {
+  box-shadow: 0 0 30px hsl(var(--accent) / 0.3);
+}
+
+.partnerImageContainer {
+  width: 100%;
+  height: 200px;
+  border-radius: calc(var(--radius) - 4px);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+  background: var(--gradient-card);
+}
+
+.partnerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.partnerCard:hover .partnerImage {
+  transform: scale(1.1);
+}
+
+.partnerName {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.partnersStats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: hsl(var(--card));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(var(--primary));
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+  font-weight: 500;
+}
+
+/* Loading placeholder for images */
+.partnerImageContainer::before {
+  content: '🏫';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.partnerImage[src] + .partnerImageContainer::before {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partnersContainer {
+    padding: 3rem 1rem;
+  }
+
+  .partnersTitle {
+    margin-bottom: 2rem;
+  }
+
+  .partnersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .partnerCard {
+    padding: 1.25rem;
+  }
+
+  .partnerImageContainer {
+    height: 180px;
+  }
+
+  .partnersStats {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnersContainer {
+    padding: 2rem 0.75rem;
+  }
+
+  .partnersGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .partnerCard {
+    padding: 1rem;
+  }
+
+  .partnerImageContainer {
+    height: 160px;
+  }
+
+  .partnerName {
+    font-size: 1rem;
+  }
+
+  .partnersStats {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .statNumber {
+    font-size: 1.8rem;
+  }
+
+  .statLabel {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,60 @@
+/* ========================================
+  Advocacy Section Styles
+======================================== */
+.advocacySection {
+    padding: 6rem 1.5rem;
+    background-color: #f9fafb; /* Light background for contrast */
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 900px; /* Optimal width for long-form text */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 3rem;
+}
+
+.title span {
+    color: #159c09; /* Primary brand color */
+}
+
+.content {
+    text-align: left;
+    color: #4b5563;
+}
+
+.content p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem; /* Spacing between paragraphs */
+}
+
+/* Remove margin from the last paragraph to avoid extra space */
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+  Responsive Media Queries
+======================================== */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+      font-size: 3rem;
+    }
+}
