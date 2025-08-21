@@ -1,6 +1,6 @@
 /* RecipeGallery.module.css */
 .recipeSection {
-  padding: 4rem 2rem;
+  padding: 4rem 6rem;
   background-color: #ffffff;
 }
 
@@ -9,6 +9,7 @@
   font-size: 2rem;
   color: #2c3e50;
   margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .recipeSection p {
@@ -52,6 +53,7 @@
 .galleryHeader h2 {
   font-size: 2rem;
   color: #1a1a1a;
+  font-weight: 500;
 }
 
 .galleryGrid {

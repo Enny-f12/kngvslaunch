@@ -6,7 +6,7 @@ const AmplifiedKitchen: React.FC = () => {
   return (
     <section className={styles.kitchenSection}>
       <div className={styles.kitchenHeader}>
-        <h2>Amplified Kitchen</h2>
+        <h2><span>Amplified</span> Kitchen</h2>
       </div>
 
       <div className={styles.kitchenContent}>

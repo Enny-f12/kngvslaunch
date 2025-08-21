@@ -1,0 +1,172 @@
+.heading h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.report,
+.r,
+.j {
+  width: 90%;
+  margin: auto;
+}
+
+.r,
+.j {
+  margin: 3rem auto;
+}
+
+.r p,
+.j p {
+  margin-top: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+.all,
+.all2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.all2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.h,
+.i {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .heading h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 5rem auto;
+    margin-bottom: -2rem;
+  }
+
+  .report,
+  .r,
+  .j {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .r p,
+  .j p {
+    margin-top: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+  }
+
+  .all,
+  .all2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 3rem auto;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .h,
+  .i {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.years {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.years a {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+  color: var(--color-1);
+  border: 1px solid var(--color-1);
+  user-select: none;
+  width: 25%;
+  text-align: center;
+  background-color: var(--color-4);
+}
+
+.years a:hover {
+  color: var(--color-4);
+  background-color: var(--color-1);
+}
+
+.paragraph {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.heading a {
+  font-size: 30px;
+  color: var(--color-1);
+  margin-left: 1rem;
+  margin-top: 2rem;
+  position: fixed;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--color-4);
+    gap: 2rem;
+    background-color: #233b20;
+    text-align: justify;
+  }
+
+  .years {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .years a {
+    width: 80%;
+  }
+
+  .heading a {
+    font-size: 24px;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .heading h2 {
+    font-size: 28px;
+    margin: 5rem auto;
+  }
+}

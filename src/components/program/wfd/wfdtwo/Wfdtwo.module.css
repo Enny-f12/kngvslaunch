@@ -1,0 +1,99 @@
+.pageContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.backLink {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #0070f3;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.schools {
+  margin-bottom: 2.5rem;
+}
+
+.schools h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.schools ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.schools li {
+  background-color: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid var(--color-1, #0070f3);
+}
+
+.say {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.say p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.photoSection h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.photoGrid {
+  display: grid;
+  /* Creates 4 columns on large screens, 2 on medium, 1 on small */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.photoWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes the container square */
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.photoWrapper img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photoWrapper:hover img {
+  transform: scale(1.05);
+}

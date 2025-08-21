@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './WFDKNGVSPage.module.css';
+import styles from './Wfdone.module.css';
 import { FaArrowLeft } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';

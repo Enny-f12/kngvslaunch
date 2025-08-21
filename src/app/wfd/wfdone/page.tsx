@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from '@/components/program/wfd/home/Home'
+import Wfdone from '@/components/program/wfd/wfdone/Wfdone'
 import Footer from '@/components/section/footer/Footer'
 const page = () => {
   return (
     <div>
-       <Home/>
-    <Footer/>
+        <Wfdone/>
+        <Footer/>
     </div>
   )
 }

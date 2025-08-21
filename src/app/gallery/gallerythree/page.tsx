@@ -1,11 +1,11 @@
+import GalleryThree from '@/components/news/gallery/gallerythree/GalleryThree'
 import React from 'react'
-import Home from '@/components/program/wfd/home/Home'
 import Footer from '@/components/section/footer/Footer'
 const page = () => {
   return (
     <div>
-       <Home/>
-    <Footer/>
+       <GalleryThree/>
+        <Footer/>
     </div>
   )
 }

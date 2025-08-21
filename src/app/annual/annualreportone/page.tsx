@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from '@/components/program/wfd/home/Home'
+import AnnualReportOne from '@/components/news/annual/annualreportone/AnnualReportOne'
 import Footer from '@/components/section/footer/Footer'
 const page = () => {
   return (
     <div>
-       <Home/>
-    <Footer/>
+        <AnnualReportOne/>
+        <Footer/>
     </div>
   )
 }

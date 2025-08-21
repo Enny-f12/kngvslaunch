@@ -1,7 +1,7 @@
 /* AmplifiedKitchen.module.css */
 
 .kitchenSection {
-  padding: 4rem 2rem;
+  padding: 4rem 6rem;
   background-color: #f5f5f5;
 }
 
@@ -12,7 +12,11 @@
 
 .kitchenHeader h2 {
   font-size: 2.5rem;
+  font-weight: 800;
   color: #2c3e50;
+}
+.kitchenHeader h2 span{
+  color:#159c09
 }
 
 .kitchenContent {
@@ -28,7 +32,11 @@
   flex: 1 1 50%;
   font-size: 1rem;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+.kitchenText h2{
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .kitchenImage {

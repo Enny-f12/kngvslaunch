@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from '@/components/program/wfd/home/Home'
+import Wfdtwo from '@/components/program/wfd/wfdtwo/Wfdtwo'
 import Footer from '@/components/section/footer/Footer'
 const page = () => {
   return (
     <div>
-       <Home/>
+    <Wfdtwo/>
     <Footer/>
     </div>
   )
