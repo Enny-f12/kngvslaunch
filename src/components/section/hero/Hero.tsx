@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.tsx
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -21,7 +20,6 @@ const slides: Slide[] = [
   { id: '5', src: '/assets/Hero/screen5.jpg', alt: 'Community engagement', text: 'Connecting children with nature and the source of their food' },
   { id: '6', src: '/assets/Hero/screen6.jpg', alt: 'Outdoor learning', text: 'Building healthier communities through collaborative food education' },
   { id: '7', src: '/assets/Hero/screen7.jpg', alt: 'School garden', text: ' From garden to kitchen: teaching culinary skills for healthy living' },
- 
 ];
 
 const AUTO_PLAY_INTERVAL = 4500; // Time in milliseconds (e.g., 5 seconds per slide)
@@ -42,7 +40,7 @@ const Hero: React.FC = () => {
         clearInterval(intervalRef.current);
       }
     };
-  }, [slides.length]); // Re-run effect if slides array length changes
+  }, []); // The empty array makes the effect run only on mount and cleanup on unmount
 
   return (
     <>
@@ -73,8 +71,8 @@ const Hero: React.FC = () => {
             {slides[currentSlideIndex].text}
           </h1>
           <div className={styles.button}>
-          <a href="/about" className={styles.learn}>Learn more</a>
-          <a href="/programs" className={styles.programs}>Our Programs</a>
+          <a href="/advisory" className={styles.learn}>Learn more</a>
+          <a href="/contact" className={styles.programs}>Our Programs</a>
           </div>
         </div>
       </div>

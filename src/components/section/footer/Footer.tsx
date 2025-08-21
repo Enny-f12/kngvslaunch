@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { FaLinkedinIn, FaWhatsapp, FaInstagram, FaTiktok } from 'react-icons/fa';
-
+import Image from 'next/image';
 const Footer: React.FC = () => {
   return (
     <footer>
       <div className={styles.footer} id="footer">
         <div className={styles.caps}>
           <div className={styles.phase}>
-            <img src="/assets/sidebar/logo.jpg" alt="Kids Nutri Garden Logo" className={styles.logo} />
+            <Image src="/assets/sidebar/logo.jpg" alt="Kids Nutri Garden Logo" className={styles.logo} width={200}
+              height={200} />
             <h2>Kids Nutri Garden</h2>
           </div>
           <p>Nurturing Generation Of Healthy Eaters; Grow It, Cook It, Love It.</p>
@@ -56,12 +57,12 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="https://www.instagram.com/kidsnutrigarden_ng?igsh=YzljYTk1ODg3Zg==" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram  color="#e1306c"/>
+                  <FaInstagram color="#e1306c" />
                 </a>
               </li>
               <li>
                 <a href="https://vm.tiktok.com/ZMkhdX2tV/" target="_blank" rel="noopener noreferrer">
-                  <FaTiktok color="#fffff"/>
+                  <FaTiktok color="#fffff" />
                 </a>
               </li>
             </ul>

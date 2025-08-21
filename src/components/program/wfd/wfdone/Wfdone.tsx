@@ -39,7 +39,7 @@ const WFDKNGVSPage = () => {
         <p>
           KNGVS in collaboration with the Association of Nutrition Science Students (ANSS), Dept. of Human Nutrition and Dietetics
           participated in the global celebrations of the FAO’s World Food Day (October 16, 2023) with the theme:
-          <strong> "Water is Life, Water is Food. Leave No One Behind."</strong>
+          <strong> `&quot;`Water is Life, Water is Food. Leave No One Behind.`&quot;`</strong>
           <br /><br />
           From 26 to 30 October, our team of 25 dedicated volunteers visited four schools, engaging over 200 pupils and 30 teachers.
           Activities included FAO videos, gardening, water filtration experiments, poster contests, singing, and dancing — all to

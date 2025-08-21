@@ -40,7 +40,7 @@ export default function Report2022() {
             </p>
             <br />
             <em>
-              "I am excited that my daughter is learning about gardening..."
+              `&quot;`I am excited that my daughter is learning about gardening...`&quot;`
             </em>
             <br />
             <p>
@@ -53,7 +53,7 @@ export default function Report2022() {
           <div className={styles.j}>
             <h2>Garden-2-Fork Exhibition</h2>
             <p>
-              And it's a wrap!!!! KNGVS 5.0 was concluded in grand style... (shortened)
+              And it`&apos;`s a wrap!!!! KNGVS 5.0 was concluded in grand style... (shortened)
             </p>
           </div>
 

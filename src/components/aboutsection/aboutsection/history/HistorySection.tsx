@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HistorySection.module.css";
-
+import Image from "next/image";
 
 const HistorySection: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const HistorySection: React.FC = () => {
         </div>
         <p>
           Our journey began as a small project aimed at addressing malnutrition, a growing concern in our country.
-          Recognizing the importance of early intervention, we set out to integrate nutrition education into children's
+          Recognizing the importance of early intervention, we set out to integrate nutrition education into children`&apos;`s
           lives from the very beginning. Our vision was simple: to reduce the risk of malnutrition by teaching kids
           about healthy food choices through hands-on experiences in gardening and cooking.
           <br />
@@ -30,7 +30,10 @@ const HistorySection: React.FC = () => {
         </p>
       </div>
       <div className={styles.image}>
-        <img src='/assets/about/history/pioneer nutri-garden kids.JPG' alt="Pioneer Nutri-Garden Kids" />
+        <Image src='/assets/about/history/pioneer nutri-garden kids.JPG' 
+        alt="Pioneer Nutri-Garden Kids"
+        width={200} 
+        height={200}/>
       </div>
     </div>
   );

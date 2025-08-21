@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './Session.module.css';
-
+import Image from 'next/image';
 // =================================================================================
 // --- TrainingGallerySection Component ---
 // This component displays a gallery of training session photos and a call-to-action button.
@@ -26,11 +26,12 @@ const TrainingGallerySection: React.FC = () => (
             <div className={styles.photoGrid}>
                 {galleryImages.map((src, index) => (
                     <div key={index} className={styles.photoCard}>
-                        <img 
-                            src={src} 
+                        <Image
+                            src={src}
                             alt={`Volunteer training session photo ${index + 1}`}
                             onError={(e) => { e.currentTarget.src = 'https://placehold.co/300x250/cccccc/FFFFFF?text=Error'; }}
-                        />
+                            width={200}
+                            height={200} />
                     </div>
                 ))}
             </div>

@@ -1,17 +1,17 @@
 'use client';
+
 import React from 'react';
-import { 
-  FaMapMarkerAlt, 
-  FaPhone, 
-  FaEnvelope, 
-  FaClock, 
-  FaLinkedinIn, 
-  FaInstagram, 
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+  FaClock,
+  FaLinkedinIn,
+  FaInstagram,
   FaWhatsapp,
   FaPaperPlane,
   FaSpinner
 } from 'react-icons/fa';
-import { useToast } from '@/hooks/use-toast';
 import styles from './Contact.module.css';
 
 interface ContactFormData {
@@ -22,7 +22,6 @@ interface ContactFormData {
 }
 
 const Contact: React.FC = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = React.useState<ContactFormData>({
     name: '',
     email: '',
@@ -30,6 +29,8 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [statusMessage, setStatusMessage] = React.useState<string | null>(null);
+  const [isSuccess, setIsSuccess] = React.useState<boolean | null>(null);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -44,15 +45,16 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setStatusMessage(null);
+    setIsSuccess(null);
 
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
-      });
+
+      // Set success message
+      setStatusMessage("Message sent successfully! We'll get back to you within 24 hours.");
+      setIsSuccess(true);
 
       // Reset form
       setFormData({
@@ -61,12 +63,10 @@ const Contact: React.FC = () => {
         subject: '',
         message: ''
       });
-    } catch (error) {
-      toast({
-        title: "Error sending message",
-        description: "Please try again later.",
-        variant: "destructive",
-      });
+    } catch { // The error variable has been removed here
+      // Set error message
+      setStatusMessage("Error sending message. Please try again later.");
+      setIsSuccess(false);
     } finally {
       setIsSubmitting(false);
     }
@@ -117,15 +117,15 @@ const Contact: React.FC = () => {
     <>
     <h2 className={styles.sectionTitle}><span>Contact</span> Us</h2>
     <section className={styles.container}>
-       
+
       <div className={styles.content}>
-        
+
         <div className={styles.contactInfo}>
           <h2 className={styles.title}>Get in touch</h2>
           <p className={styles.subtitle}>
             You can contact us anytime and day, our assistant will get back to you and attend to your needs
           </p>
-          
+
           <div className={styles.contactDetails}>
             {contactItems.map((item, index) => (
               <div key={index} className={styles.contactItem}>
@@ -166,6 +166,12 @@ const Contact: React.FC = () => {
           </p>
 
           <form className={styles.form} onSubmit={handleSubmit}>
+            {statusMessage && (
+              <div className={`${styles.statusMessage} ${isSuccess ? styles.success : styles.error}`}>
+                {statusMessage}
+              </div>
+            )}
+            
             <div className={styles.formGroup}>
               <label htmlFor="name" className={styles.label}>
                 Your name

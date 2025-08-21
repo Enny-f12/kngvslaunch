@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Partners.module.css';
-
+import Image from 'next/image';
 const partnerLogos = [
   '/assets/partners/NIHORT official logo.jpg',
   '/assets/partners/KNGVS Pro_20240909_000303_1.png',
@@ -23,7 +23,7 @@ const PartnersSection: React.FC = () => {
           <h2>Our Partners</h2>
         </div>
         <p>
-          Our partners are key to the success of our kids' nutrition garden program. Collaborating with local schools,
+          Our partners are key to the success of our kids`&apos;` nutrition garden program. Collaborating with local schools,
           community groups, and nutrition experts, they provide resources and expertise that enhance our vacation school,
           volunteer training, amplified kitchen, and annual exhibition. Together, we promote healthy eating,
           sustainability, and community engagement, empowering children to build lifelong food skills.
@@ -33,7 +33,11 @@ const PartnersSection: React.FC = () => {
       <div className={styles.logoSlider}>
         <div className={styles.logoSlide}>
           {[...partnerLogos, ...partnerLogos].map((logo, index) => (
-            <img key={index} src={logo} alt={`partner-logo-${index}`} />
+            <Image key={index}
+              src={logo}
+              alt={`partner-logo-${index}`}
+              width={200}
+              height={200} />
           ))}
         </div>
       </div>

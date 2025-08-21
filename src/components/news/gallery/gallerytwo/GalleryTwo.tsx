@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./GalleryTwo.module.css";
 import  Link  from "next/link";
-
+import Image from "next/image";
 const Gallery2022: React.FC = () => {
   const images: string[] = [
     "/images/1e195ee6-aa6e-4c9f-8a2f-b7161cc4af2d.jpg",
@@ -30,7 +30,10 @@ const Gallery2022: React.FC = () => {
         <h3>2022</h3>
         <div className={styles.images}>
           {images.map((src, index) => (
-            <img key={index} src={src} alt={`2022 Gallery ${index + 1}`} />
+            <Image key={index} src={src}
+             alt={`2022 Gallery ${index + 1}`} 
+             width={200} 
+        height={200}/>
           ))}
         </div>
       </div>

@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import styles from "./Sidebar.module.css";
 import type { MenuItemProps } from "./types";
-
+import Image from "next/image";
 // Button component
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "ghost";
@@ -162,10 +162,12 @@ export const Sidebar: React.FC = () => {
           </Button>
 
           <div className={styles.logoWrapper}>
-            <img
+            <Image
               src="/assets/sidebar/logo.jpg"
               alt="Kids Nutri Garden"
               className={styles.logoImage}
+              width={200}
+              height={200}
             />
             <h1 className={styles.logoText}>Kids Nutri Garden</h1>
           </div>

@@ -14,7 +14,7 @@ const GetInvolved: React.FC = () => {
       <div className={styles.get_button}>
         <div className={styles.p}>
           <p>
-            Join us in making a difference! Support our kids' nutrition garden
+            Join us in making a difference! Support our kids`&apos;` nutrition garden
             program through volunteering, donations, or partnerships. Together,
             we can inspire healthy habits and empower children to grow and
             thrive.

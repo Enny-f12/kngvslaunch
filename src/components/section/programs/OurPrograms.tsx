@@ -1,7 +1,7 @@
 // components/OurPrograms.tsx
 import React from 'react';
 import styles from './OurPrograms.module.css';
-import { FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const programs = [
   {
@@ -36,14 +36,16 @@ const OurPrograms: React.FC = () => {
             <h2>Our Programs</h2>
           </div>
           <p>
-            Our kids' nutrition garden program is a dynamic, hands-on initiative aimed at fostering healthy eating habits and a deeper understanding of sustainable food practices in children. Through engaging activities such as vacation school, volunteer training, and immersive amplified kitchen experiences, kids learn to cultivate, cook, and appreciate fresh, nutritious produce. The program culminates in an exciting annual exhibition where participants showcase their newfound knowledge and skills. By connecting children to the source of their food, we inspire lifelong healthy habits while encouraging environmental stewardship, teamwork, and a love for gardening and nutrition.
+            Our kids`&apos;` nutrition garden program is a dynamic, hands-on initiative aimed at fostering healthy eating habits and a deeper understanding of sustainable food practices in children. Through engaging activities such as vacation school, volunteer training, and immersive amplified kitchen experiences, kids learn to cultivate, cook, and appreciate fresh, nutritious produce. The program culminates in an exciting annual exhibition where participants showcase their newfound knowledge and skills. By connecting children to the source of their food, we inspire lifelong healthy habits while encouraging environmental stewardship, teamwork, and a love for gardening and nutrition.
           </p>
         </div>
 
         <div className={styles.framesTwo}>
           {programs.map(({ title, link, image }) => (
             <div className={styles.card} key={title}>
-              <img src={image} alt={title} />
+              <Image src={image} alt={title}
+                width={200}
+                height={200} />
               <h3>
                 <a href={link}>
                   {title}

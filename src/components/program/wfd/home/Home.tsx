@@ -19,7 +19,7 @@ const WorldFoodDay: React.FC = () => {
         </p>
         <p>
           Over the years, Kids Nutri Garden has proudly participated in the
-          World Food Day, aligning its mission with WFD's objectives. Through
+          World Food Day, aligning its mission with WFD`&apos;`s objectives. Through
           this partnership, Kids Nutri Garden has participated in various
           events and initiatives, leveraging its expertise in promoting
           nutrition education and sustainable gardening. These collaborative

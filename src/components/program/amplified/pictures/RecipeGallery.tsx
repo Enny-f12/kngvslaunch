@@ -1,7 +1,7 @@
 import React from 'react';
 
 import recipeStyles from './RecipeGallery.module.css';
- 
+ import Image from 'next/image';
 
  const RecipeGallery: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ import recipeStyles from './RecipeGallery.module.css';
         <br /><br />
         ✓ Rolled choc-oh filled French toast with fruits
         <br /><br />
-        The KNGVS Amplified Nutri-kitchen helps drive the "Nutri-garden-2-fork!" concept home.
+        The KNGVS Amplified Nutri-kitchen helps drive the `&quot;`Nutri-garden-2-fork!`&quot;` concept home.
       </p>
 
       <h2 className={recipeStyles.galleryTitle}>Amplified Kitchen Pictures</h2>
@@ -33,7 +33,11 @@ import recipeStyles from './RecipeGallery.module.css';
           'DSC_1776.jpg', 'DSC_1770.jpg', 'DSC_1767.jpg', 'DSC_1666.jpg',
           'DSC_1631.jpg', 'KNGVS Pro_20240912_144037_1.png', 'KNGVS Pro_20240912_144215_1.png'
         ].map((filename, index) => (
-          <img key={index} src={`./images/${filename}`} alt={`Amplified ${index + 1}`} />
+          <Image key={index}
+           src={`./images/${filename}`} 
+           alt={`Amplified ${index + 1}`}
+           width={200} 
+        height={200} />
         ))}
       </div>
     </section>

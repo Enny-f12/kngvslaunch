@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
           through fun, hands-on garden-based nutrition education and create an environment where
           children can thrive against diseases and other developmental health challenges. <br />
           Our vision is to build generations of healthy eaters in order to ensure and add value to a
-          healthier, greener future for our children as we "catch them young".
+          healthier, greener future for our children as we `&quot;`catch them young`&quot;`.
         </p>
         <div className={styles.buttonWrapper}>
           <a href="/about" className={styles.cta}>

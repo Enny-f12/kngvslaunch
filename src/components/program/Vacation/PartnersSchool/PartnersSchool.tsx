@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PartnersSchool.module.css';
-
+import Image from 'next/image';
 interface PartnerSchool {
   id: string;
   name: string;
@@ -52,16 +52,18 @@ const PartnerSchools: React.FC = () => {
         <h2 className={styles.partnersTitle}>
           Schools Partnered With
         </h2>
-        
+
         <div className={styles.partnersGrid}>
           {partnerSchools.map((school) => (
             <article key={school.id} className={styles.partnerCard}>
               <div className={styles.partnerImageContainer}>
-                <img 
-                  src={school.image} 
+                <Image
+                  src={school.image}
                   alt={`${school.name} logo or building`}
                   className={styles.partnerImage}
                   loading="lazy"
+                  width={200}
+                  height={200}
                 />
               </div>
               <h3 className={styles.partnerName}>

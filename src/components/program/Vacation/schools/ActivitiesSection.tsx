@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ActivitiesSection.module.css';
-
+import Image from 'next/image';
 interface Activity {
   id: string;
   title: string;
@@ -43,10 +43,12 @@ const ActivitiesSection: React.FC = () => {
               {activity.icon}
             </div>
             <div className={styles.activityImageContainer}>
-              <img 
-                src={activity.image} 
+              <Image
+                src={activity.image}
                 alt={activity.title}
                 className={styles.activityImage}
+                width={200}
+                height={200}
               />
             </div>
             <div className={styles.activityContent}>

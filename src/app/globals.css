@@ -26,6 +26,14 @@
   --color-9: #ffc107;
   --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
 
+  --primary-color: #159c09;
+  --secondary-color: #f59e0b; /* A warm, complementary accent */
+  --dark-text: #1f2937;
+  --light-text: #4b5563;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+
+
   /* Define your sidebar specific variables using the global ones or new ones */
   --sidebar-bg: #1b1a1b; /* This was fixed to the exact value from your original CSS */
   --submenu-bg: #262627;

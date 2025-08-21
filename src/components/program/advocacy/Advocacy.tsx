@@ -17,7 +17,7 @@ const AdvocacySection: React.FC = () => {
             At Kids Nutri Garden, advocacy is at the core of what we do. We believe in the power of partnerships and collaboration to drive positive change in the communities we serve. Our advocacy efforts are focused on building strong relationships with brands, organizations, and government bodies, encouraging them to support our initiatives and work alongside us to create meaningful impact.
           </p>
           <p>
-            We advocate by reaching out to potential partners through well-researched proposals and personal engagements. Our goal is to align our mission with the values and objectives of these stakeholders, demonstrating how their support can make a real difference. Whether it's securing funding, resources, or technical expertise, we ensure that every partnership we build is mutually beneficial and driven by shared goals.
+            We advocate by reaching out to potential partners through well-researched proposals and personal engagements. Our goal is to align our mission with the values and objectives of these stakeholders, demonstrating how their support can make a real difference. Whether it`&apos;`s securing funding, resources, or technical expertise, we ensure that every partnership we build is mutually beneficial and driven by shared goals.
           </p>
           <p>
             By working closely with governments, we aim to address critical societal issues such as education, health, and community development. Through our advocacy efforts, we present evidence-based proposals that highlight how our programs can contribute to policy objectives and public welfare.

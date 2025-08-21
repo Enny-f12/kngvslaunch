@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./MissionSection.module.css";
-
+import Image from "next/image";
 const MissionSection: React.FC = () => {
   return (
     <div className={styles.mission}>
       <div className={styles.image}>
-        <img src='/assets/about/mission/DSC08067.JPG' alt="Children in Garden" />
+        <Image src='/assets/about/mission/DSC08067.JPG' 
+        alt="Children in Garden" 
+        width={200} 
+        height={200}/>
       </div>
       <div className={styles.text}>
         <div className={styles.hero_text}>

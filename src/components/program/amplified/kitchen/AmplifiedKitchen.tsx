@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './AmplifiedKitchen.module.css';
-
+import Image from 'next/image';
 
 const AmplifiedKitchen: React.FC = () => {
   return (
@@ -22,7 +22,10 @@ const AmplifiedKitchen: React.FC = () => {
           </p>
         </div>
         <div className={styles.kitchenImage}>
-          <img src="./images/KNGVS Pro_20240912_144212_1.png" alt="Amplified Kitchen" />
+          <Image src="./images/KNGVS Pro_20240912_144212_1.png" 
+          alt="Amplified Kitchen" 
+          width={200} 
+        height={200}/>
         </div>
       </div>
     </section>

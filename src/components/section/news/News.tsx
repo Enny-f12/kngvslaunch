@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./News.module.css";
-
+import Image from "next/image";
 type NewsItem = {
   id: number;
   title: string;
@@ -14,7 +14,7 @@ const newsData: NewsItem[] = [
     id: 1,
     title: "Annual Report",
     snippet: "Reports from two years of transforming learning through food and farming.",
-    image:"/assets/news/istockphoto-1341785038-612x612.webp" ,
+    image: "/assets/news/istockphoto-1341785038-612x612.webp",
     link: "/blog/nutrition-garden-empowers-kids"
   },
   {
@@ -37,17 +37,20 @@ const NewsSection: React.FC = () => {
   return (
     <section className={styles.newsSection}>
       <div className={styles.header}>
-       <div className={styles.line}>
-       <div id={styles.vertical_line}></div>
-       <h2>Latest News and Reports</h2>
+        <div className={styles.line}>
+          <div id={styles.vertical_line}></div>
+          <h2>Latest News and Reports</h2>
         </div>
-        <p>Catch up on what's happening in our programs</p>
+        <p>Catch up on what`&apos;`s happening in our programs</p>
       </div>
 
       <div className={styles.grid}>
         {newsData.map((item) => (
           <div key={item.id} className={styles.card}>
-            <img src={item.image} alt={item.title} />
+            <Image src={item.image}
+              alt={item.title}
+              width={200}
+              height={200} />
             <div className={styles.cardContent}>
               <h3>{item.title}</h3>
               <p>{item.snippet}</p>

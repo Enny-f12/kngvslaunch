@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Team.module.css'
-
+import Image from 'next/image';
 interface TeamMember {
   name: string;
   role: string;
@@ -23,7 +23,7 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Emmanuel Udoh',
     role: 'Program Officer',
-    imageUrl: 'https://placehold.co/400x400/A3E635/FFFFFF?text=Officer',
+    imageUrl: '/assets/about/team/Emmanuel.jpg',
   },
 ];
 
@@ -32,8 +32,7 @@ const teamMembers: TeamMember[] = [
 const TeamSection: React.FC = () => {
   return (
     <>
-     
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
 
       <section className={styles.teamSection}>
         <div className={styles.container}>
@@ -45,16 +44,18 @@ const TeamSection: React.FC = () => {
               Our dedicated team is passionate about empowering children to make healthy, informed choices. Through hands-on learning in nutrition and gardening, we aim to inspire the next generation to lead healthier, more sustainable lives.
             </p>
           </header>
-          
+
           <div className={styles.teamGrid}>
             {teamMembers.map((member, index) => (
               <div key={index} className={styles.teamMemberCard}>
                 <div className={styles.imageWrapper}>
-                  <img 
-                    src={member.imageUrl} 
-                    alt={`Portrait of ${member.name}`} 
+                  <Image
+                    src={member.imageUrl}
+                    alt={`Portrait of ${member.name}`}
                     className={styles.memberImage}
-                    
+                    width={200}
+                    height={200}
+
                   />
                 </div>
                 <div className={styles.memberInfo}>

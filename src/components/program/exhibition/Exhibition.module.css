@@ -1,13 +1,5 @@
-/* --- Global Styles & Fonts --- */
-/* These variables and body styles would ideally be in a global stylesheet (e.g., index.css) */
-:root {
-  --primary-color: #159c09;
-  --secondary-color: #f59e0b; /* A warm, complementary accent */
-  --dark-text: #1f2937;
-  --light-text: #4b5563;
-  --bg-light: #f9fafb;
-  --bg-white: #ffffff;
-}
+
+
 
 /* --- Main Wrapper --- */
 .exhibitionWrapper {
