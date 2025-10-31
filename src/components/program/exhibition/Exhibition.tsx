@@ -47,7 +47,7 @@ const Exhibition: React.FC = () => {
                     <div className={styles.heroOverlay}></div>
                     <div className={styles.heroContent}>
                         <h1>Grow It, Cook It, Love It</h1>
-                        <p>Our Annual Public Exhibition and Fun Day</p>
+                 
                     </div>
                 </section>
 
@@ -97,19 +97,7 @@ const Exhibition: React.FC = () => {
                     </div>
                 </section>
 
-                {/* --- Final Image Section --- */}
-                <section className={`${styles.section} ${styles.contentSection}`}>
-                    <div className={`${styles.container} ${styles.singleImageSection}`}>
-                        <h2 className={styles.sectionTitle}>A Cross-section of <span>Children & Guests</span></h2>
-                        <Image
-                            src="/assets/Program/exhibition/KNGVS Pro_20240910_151717_1.png"
-                            alt="A group photo of children and guests at the exhibition"
-                            className={styles.singleImage}
-                            width={200}
-                            height={200}
-                        />
-                    </div>
-                </section>
+               
 
             </div>
         </>

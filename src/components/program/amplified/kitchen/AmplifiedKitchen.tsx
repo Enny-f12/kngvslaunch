@@ -22,10 +22,10 @@ const AmplifiedKitchen: React.FC = () => {
           </p>
         </div>
         <div className={styles.kitchenImage}>
-          <Image src="./images/KNGVS Pro_20240912_144212_1.png" 
+          <Image src="/assets/Program/amplified/KNGVS Pro_20240912_144212_1.png" 
           alt="Amplified Kitchen" 
-          width={200} 
-        height={200}/>
+          width={429} 
+        height={648}/>
         </div>
       </div>
     </section>

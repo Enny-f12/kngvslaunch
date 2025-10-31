@@ -1,6 +1,6 @@
 import React from 'react'
 import Advocacy from '@/components/program/advocacy/Advocacy'
-import Footer from '@/components/section/footer/Footer'
+import Footer from '@/components/landing-page/footer/Footer'
 const page = () => {
   return (
     <div>

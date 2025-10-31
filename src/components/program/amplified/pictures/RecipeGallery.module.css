@@ -1,6 +1,6 @@
 /* RecipeGallery.module.css */
 .recipeSection {
-  padding: 4rem 6rem;
+  padding: 4rem 1rem;
   background-color: #ffffff;
 }
 
@@ -59,7 +59,7 @@
 .galleryGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 0.5rem;
   justify-items: center;
 }
 

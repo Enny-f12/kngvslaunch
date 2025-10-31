@@ -1,7 +1,7 @@
 /* AmplifiedKitchen.module.css */
 
 .kitchenSection {
-  padding: 4rem 6rem;
+  padding: 6rem 1rem;
   background-color: #f5f5f5;
 }
 
@@ -33,33 +33,47 @@
   font-size: 1rem;
   color: #333;
   line-height: 1.7;
+  
 }
 .kitchenText h2{
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
 .kitchenImage {
   flex: 1 1 40%;
   text-align: center;
+  border-radius: 2rem;
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(15, 100, 67, 0.1);
 }
 
-.kitchenImage img {
-  max-width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+
 
 @media (max-width: 768px) {
   .kitchenContent {
     flex-direction: column;
   }
 }
+@media (min-width: 768px) {
+  .kitchenHeader h2 {
+    font-size: 3rem;
+  }
 
+  .kitchenText {
+    font-size: 1.5rem;
+  }
+  .kitchenText h2{
+    font-size: 2rem;
+  }
+  .kitchenSection{
+    padding: 6rem 3rem;
+  }
+}
 /* RecipeGallery.module.css */
 
 .recipeSection {
-  padding: 4rem 2rem;
+  padding: 6rem 1rem;
   background-color: #ffffff;
 }
 

@@ -27,14 +27,14 @@ import recipeStyles from './RecipeGallery.module.css';
       <h2 className={recipeStyles.galleryTitle}>Amplified Kitchen Pictures</h2>
       <div className={recipeStyles.galleryGrid}>
         {[
-          'KNGVS Pro_20240912_144212_1.png',
-          'DSC_0374.jpg', 'DSC_0400.jpg', 'DSC_0440.jpg', 'DSC_0453.jpg',
+          
+          'DSC_0374.jpg', 'DSC_0440.jpg', 'DSC_0453.jpg',
           'DSC_0537.jpg', 'DSC_1589.jpg', 'DSC_1503.jpg', 'DSC_1537.jpg',
           'DSC_1776.jpg', 'DSC_1770.jpg', 'DSC_1767.jpg', 'DSC_1666.jpg',
           'DSC_1631.jpg', 'KNGVS Pro_20240912_144037_1.png', 'KNGVS Pro_20240912_144215_1.png'
         ].map((filename, index) => (
           <Image key={index}
-           src={`./images/${filename}`} 
+           src={`/assets/Program/amplified/${filename}`} 
            alt={`Amplified ${index + 1}`}
            width={200} 
         height={200} />

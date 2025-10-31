@@ -104,6 +104,8 @@
   margin-bottom: 1rem;
   position: relative;
   background: var(--gradient-card);
+  box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
+  border-radius:16px;
 }
 
 .partnerImage {
@@ -147,7 +149,7 @@
   font-family: var(--font-heading);
   font-size: 2.5rem;
   font-weight: 700;
-  color: hsl(var(--primary));
+  color: #159c09;
   display: block;
   margin-bottom: 0.5rem;
 }

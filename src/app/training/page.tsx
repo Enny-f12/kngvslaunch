@@ -1,11 +1,11 @@
 import React from 'react'
-import TrainingIntroSection from '@/components/program/Trainings/training/Training'
+import Training from '@/components/program/Trainings/training/Training'
 import TrainingGallerySection from '@/components/program/Trainings/session/Session'
-import Footer from '@/components/section/footer/Footer'
+import Footer from '@/components/landing-page/footer/Footer'
 const page = () => {
   return (
     <div>
-        <TrainingIntroSection/>
+        <Training/>
         <TrainingGallerySection/>
         <Footer/>
 

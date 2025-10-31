@@ -57,7 +57,7 @@
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 4px 10px rgba(21, 156, 9, 0.3);
 }
 
 .activityImage {
@@ -65,6 +65,7 @@
   height: 300px;
   object-fit: cover;
   transition: var(--transition-smooth);
+  border-radius: 16px;
 }
 
 .activityCard:hover .activityImage {

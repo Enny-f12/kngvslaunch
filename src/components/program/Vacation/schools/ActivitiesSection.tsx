@@ -14,7 +14,7 @@ const activities: Activity[] = [
     id: 'garden',
     title: 'School Garden',
     description: 'We offer hands-on gardening skills by teaching children how to plant, nurture, and water seeds such as cucumbers, tomatoes, and other vegetables. They learn the importance of creating garden beds and how to properly plant seeds for optimal growth. Through this experience, children develop an understanding of plant care, from soil preparation to harvesting. Our school garden program emphasizes responsibility, patience, and teamwork, as children actively engage with nature. In addition to gardening, they also gain valuable knowledge about the benefits of fresh, homegrown produce, promoting healthy eating habits and a lifelong appreciation for the environment.',
-    image: '/assets/Program/vacation/IMG-20210710-WA0003.jpg',
+    image:'/assets/Program/vacation/KNGVS Pro_20240910_120141_1.png',
     icon: '🌱'
   },
   {
@@ -28,7 +28,7 @@ const activities: Activity[] = [
     id: 'exercise',
     title: 'Lots of Exercise',
     description: 'Exercise is essential for maintaining a healthy body and mind, especially for children. Regular physical activity helps build strong muscles and bones, improves cardiovascular health, and enhances coordination and flexibility. Through fun activities like running, jumping, playing sports, and dancing, children develop important motor skills while staying active. Exercise also helps boost mood, reduce stress, and improve concentration, which can enhance academic performance. By incorporating lots of exercise into their daily routine, children are better equipped to maintain a healthy weight and reduce the risk of chronic diseases later in life. Encouraging children to participate in regular physical activity fosters a lifelong appreciation for fitness, leading to healthier, more active lifestyles as they grow.',
-    image: '/assets/Program/vacation/KNGVS Pro_20240910_120141_1.png',
+    image:'/assets/Program/vacation/IMG-20210710-WA0003.jpg' ,
     icon: '🏃‍♂️'
   }
 ];

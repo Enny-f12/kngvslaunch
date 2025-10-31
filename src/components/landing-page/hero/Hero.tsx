@@ -71,8 +71,8 @@ const Hero: React.FC = () => {
             {slides[currentSlideIndex].text}
           </h1>
           <div className={styles.button}>
-          <a href="/advisory" className={styles.learn}>Learn more</a>
-          <a href="/contact" className={styles.programs}>Our Programs</a>
+          <a href="/exhibition" className={styles.learn}>Learn more</a>
+          <a href="/advocacy" className={styles.programs}>Our Programs</a>
           </div>
         </div>
       </div>
