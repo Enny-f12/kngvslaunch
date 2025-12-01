@@ -13,12 +13,12 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Shirley Ejoh',
     role: 'Founder Of Kids Nutri Garden',
-    imageUrl: 'https://placehold.co/400x400/159c09/FFFFFF?text=Founder',
+    imageUrl: '/assets/team/IMG-20240910-WA0032.jpg',
   },
   {
-    name: 'AD',
+    name: 'AB',
     role: 'Advisory Board',
-    imageUrl: 'https://placehold.co/400x400/34D399/FFFFFF?text=Advisor',
+    imageUrl: '/assets/about/team/Emmanuel.jpg',
   },
   {
     name: 'Emmanuel Udoh',

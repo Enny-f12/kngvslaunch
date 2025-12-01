@@ -78,7 +78,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       expandable: true,
       children: [
         { name: "Vacation School", href: "/vacation" },
-        { name: "Annual Exhibition", href: "/exhibition" },
+        { name: "Annual Exhibition", href: "/exhibition/cover" },
         { name: "Amplified Kitchen", href: "/amplified" },
         { name: "World Food Day", href: "/wfd" },
         { name: "Training", href: "/training" },
@@ -262,7 +262,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-hidden relative">
         {/* Mobile header */}
-        <div className="lg:hidden flex items-center justify-between h-14 px-4 border-b border-gray-200 shadow-sm">
+        <div className="lg:hidden flex items-center justify-between h-14 px-4 border-b border-gray-200 bg-white shadow-sm">
           <button
             onClick={() => setSidebarOpen(true)}
             className="text-gray-700 hover:text-[#159c09] transition-colors"

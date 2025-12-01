@@ -19,7 +19,7 @@ const TrainingIntroSection: React.FC = () => (
                 </div>
                 <div className={styles.imageContainer}>
                     <Image
-                        src="https://placehold.co/400x450/34d399/FFFFFF?text=Training"
+                        src="/assets/Program/training/IMG-20240725-WA0050.jpg"
                         alt="A volunteer training session in a garden"
                         onError={(e) => { e.currentTarget.src = 'https://placehold.co/400x450/cccccc/FFFFFF?text=Error'; }}
 

@@ -14,7 +14,7 @@ const AdvisoryBoardSection: React.FC = () => {
                     </div>
                     <div className={styles.imageContainer}>
                         <Image
-                            src="https://placehold.co/480x350/159c09/FFFFFF?text=Advisory+Board"
+                            src="/assets/about/Hero/screen5.jpg"
                             alt="A meeting of the advisory board"
                             width={200}
                             height={200}

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Hero from '@/components/landing-page/hero/Hero'
-import Footer from './components/landing-page/footer/Footer'
 import Faq from './components/landing-page/faq/Faq'
 import GetInvolved from '@/components/landing-page/involved/GetInvolved'
 import Intro from '@/components/landing-page/intro/Intro'
@@ -23,7 +22,7 @@ const App:React.FC = () => {
       <NewsSection/>
       <GetInvolved/>
       <Faq/>
-      <Footer/>
+     
 
     </div>
   )

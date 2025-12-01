@@ -2,18 +2,22 @@
 import React from 'react';
 import styles from './Session.module.css';
 import Image from 'next/image';
-// =================================================================================
-// --- TrainingGallerySection Component ---
-// This component displays a gallery of training session photos and a call-to-action button.
-// =================================================================================
 
 const galleryImages = [
-    'https://placehold.co/300x250/a3e635/FFFFFF?text=Session+1',
-    'https://placehold.co/300x250/86efac/FFFFFF?text=Session+2',
-    'https://placehold.co/300x250/4ade80/FFFFFF?text=Session+3',
-    'https://placehold.co/300x250/22c55e/FFFFFF?text=Session+4',
-    'https://placehold.co/300x250/16a34a/FFFFFF?text=Session+5',
-    'https://placehold.co/300x250/15803d/FFFFFF?text=Session+6',
+    
+
+       '/assets/Program/training/IMG-20240723-WA0008.jpg',
+       '/assets/Program/training/IMG-20240725-WA0061.jpg',
+        '/assets/Program/training/IMG-20240725-WA0076.jpg',
+        '/assets/Program/training/IMG-20240725-WA0066.jpg',
+        '/assets/Program/training/IMG-20240725-WA0088.jpg',
+        '/assets/Program/training/IMG-20240725-WA0083.jpg',
+        '/assets/Program/training/IMG-20240725-WA0008.jpg',
+        '/assets/Program/training/IMG-20240725-WA0044.jpg',
+         '/assets/Program/training/IMG-20240726-WA0048.jpg',
+        '/assets/Program/training/IMG-20240726-WA0037.jpg',
+        '/assets/Program/training/IMG-20240725-WA0073.jpg',
+        '/assets/Program/training/IMG-20240723-WA0014.jpg',
 ];
 
 const TrainingGallerySection: React.FC = () => (

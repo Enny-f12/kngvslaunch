@@ -23,7 +23,7 @@ const programs = [
     title: 'Annual Exhibition',
     link: 'exhibition.html',
     image: '/assets/programs/KNGVS Pro_20240910_151717_1.png',
-  },
+ },
 ];
 
 const OurPrograms: React.FC = () => {
