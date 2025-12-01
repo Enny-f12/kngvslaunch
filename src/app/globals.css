@@ -1,13 +1,13 @@
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
-
-
-/* src/globals.css (or your main global stylesheet) */
-
-
 
 /* Root CSS Variables */
 :root {
-  --color-1: #159c09; /* This seems to be your primary green */
+  --color-1: #159c09;
   --color-2: #c9e4ca;
   --color-3: #333;
   --color-4: #ffffff;
@@ -19,18 +19,15 @@
   --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
 
   --primary-color: #159c09;
-  --secondary-color: #f59e0b; /* A warm, complementary accent */
+  --secondary-color: #f59e0b;
   --dark-text: #1f2937;
   --light-text: #4b5563;
   --bg-light: #f9fafb;
   --bg-white: #ffffff;
 
-
-  /* Define your sidebar specific variables using the global ones or new ones */
-  --sidebar-bg: #1b1a1b; /* This was fixed to the exact value from your original CSS */
+  --sidebar-bg: #1b1a1b;
   --submenu-bg: #262627;
 
-  /* Icon specific colors - these can be defined globally too or closer to the component */
   --icon-color-home: #9c0992;
   --icon-color-about: #fc4982;
   --icon-color-programs: #316ff6;
@@ -38,10 +35,7 @@
   --icon-color-resources: #ebfd61;
 }
 
-/* Any other global styles */
-
-
-
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
@@ -49,7 +43,14 @@
   }
 }
 
+/* GLOBAL TYPOGRAPHY */
 body {
-  
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: var(--dark-text);
+  background: var(--bg-light);
+}
+
+/* Headings use Montserrat automatically */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }

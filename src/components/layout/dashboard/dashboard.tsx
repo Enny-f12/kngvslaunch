@@ -176,11 +176,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 {item.expandable ? (
                   <button
                     onClick={() => toggleMenu(item.key)}
-                    className={`w-full flex items-center justify-between px-3 py-3 rounded-md text-sm font-medium transition-all duration-150
+                    className={`w-full flex items-center justify-between px-3 py-3 rounded-md text-base font-medium transition-all duration-150
                       ${
                         active
                           ? "bg-[#e6f6e5] text-[#159c09] border-l-4 border-[#159c09]"
-                          : "text-gray-700 hover:bg-[#f3fdf2] hover:text-[#159c09] hover:border-l-4 hover:border-[#159c09]"
+                          : "text-gray-900 hover:bg-[#f3fdf2] hover:text-[#159c09] hover:border-l-4 hover:border-[#159c09]"
                       }
                       ${sidebarCollapsed ? "justify-center border-none" : ""}`}
                     title={sidebarCollapsed ? item.name : undefined}
@@ -191,7 +191,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                         sidebarCollapsed ? "justify-center" : ""
                       }`}
                     >
-                      <Icon size={18} className={sidebarCollapsed ? "" : "mr-3"} />
+                      <Icon size={20} className={sidebarCollapsed ? "" : "mr-3"} />
                       {!sidebarCollapsed && <span>{item.name}</span>}
                     </div>
                     {!sidebarCollapsed &&
@@ -205,7 +205,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                   <Link
                     href={item.href || "#"}
                     onClick={() => setSidebarOpen(false)}
-                    className={`block rounded-md text-sm font-medium transition-all duration-150
+                    className={`block rounded-md text-baase font-medium transition-all duration-150
                       ${
                         active
                           ? "bg-[#e6f6e5] text-[#159c09] border-l-4 border-[#159c09]"
@@ -262,10 +262,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-hidden relative">
         {/* Mobile header */}
-        <div className="lg:hidden flex items-center justify-between h-14 px-4 border-b border-gray-200 bg-white shadow-sm">
+        <div className="lg:hidden flex items-center justify-between h-14 px-4 border-b border-gray-200 bg-white  shadow-sm">
           <button
             onClick={() => setSidebarOpen(true)}
-            className="text-gray-700 hover:text-[#159c09] transition-colors"
+            className="text-green-700 hover:text-[#159c09] transition-colors"
           >
             <Menu size={24} />
           </button>

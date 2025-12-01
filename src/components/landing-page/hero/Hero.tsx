@@ -2,14 +2,12 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import styles from './Hero.module.css';
 
-// Define your slide data, now including a 'text' property
 interface Slide {
   id: string;
-  src: string; // Path to image in public folder
+  src: string;
   alt: string;
-  text: string; // Dynamic text for this specific slide
+  text: string;
 }
 
 const slides: Slide[] = [
@@ -19,63 +17,78 @@ const slides: Slide[] = [
   { id: '4', src: '/assets/Hero/screen4.png', alt: 'Kids cooking', text: 'Transforming schools into living classrooms for environmental literacy' },
   { id: '5', src: '/assets/Hero/screen5.jpg', alt: 'Community engagement', text: 'Connecting children with nature and the source of their food' },
   { id: '6', src: '/assets/Hero/screen6.jpg', alt: 'Outdoor learning', text: 'Building healthier communities through collaborative food education' },
-  { id: '7', src: '/assets/Hero/screen7.jpg', alt: 'School garden', text: ' From garden to kitchen: teaching culinary skills for healthy living' },
+  { id: '7', src: '/assets/Hero/screen7.jpg', alt: 'School garden', text: 'From garden to kitchen: teaching culinary skills for healthy living' },
 ];
 
-const AUTO_PLAY_INTERVAL = 4500; // Time in milliseconds (e.g., 5 seconds per slide)
+const AUTO_PLAY_INTERVAL = 4500;
 
 const Hero: React.FC = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    // Start auto-play
     intervalRef.current = setInterval(() => {
       setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, AUTO_PLAY_INTERVAL);
 
-    // Clear interval on component unmount
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, []); // The empty array makes the effect run only on mount and cleanup on unmount
+  }, []);
 
   return (
     <>
-      {/* Scroll Watcher */}
-      <div className={styles.scrollWatcher}></div>
+      
 
-      <div className={styles.slider}>
-        {/* The overlay for the background images */}
-        <div className={styles.over}></div>
+      {/* Slider */}
+      <div className="relative w-full h-120 md:h-150 lg:h-200 overflow-hidden">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
 
-        {/* Render all images, but only show the active one via opacity */}
+        {/* Images */}
         {slides.map((slide, index) => (
           <Image
             key={slide.id}
             src={slide.src}
             alt={slide.alt}
-            fill // This makes the image fill its parent container
-            className={`${styles.slideImage} ${index === currentSlideIndex ? styles.active : ''}`}
-            priority={index === 0} // Optimize loading for the first image
-            sizes="100vw" // Helps Next.js optimize image sizes based on viewport
+            fill
+            className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1500 ease-in-out ${index === currentSlideIndex ? 'opacity-100' : 'opacity-0'}`}
+            priority={index === 0}
+            sizes="100vw"
           />
         ))}
 
-        {/* Dynamic Text Overlay for the current slide */}
-        {/* We use slides[currentSlideIndex].id as a key to force re-render and re-trigger animation */}
-        <div className={styles.textOverlay}>
-          <h1 key={slides[currentSlideIndex].id}>
+        {/* Text Overlay */}
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center gap-10 lg:gap-16 px-5 sm:px-10 md:px-20">
+          <h1 key={slides[currentSlideIndex].id} className="text-white font-bold uppercase text-3xl sm:text-4xl md:text-5xl lg:text-[4.5vw] leading-tight drop-shadow-2xl animate-fadeIn">
             {slides[currentSlideIndex].text}
           </h1>
-          <div className={styles.button}>
-          <a href="/exhibition" className={styles.learn}>Learn more</a>
-          <a href="/advocacy" className={styles.programs}>Our Programs</a>
+
+          {/* Buttons */}
+          <div className="flex flex-row gap-4 sm:gap-8 flex-wrap justify-center">
+            <a href="/about" className="w-40 px-6 py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-900 hover:text-green-600 transform transition-transform duration-300 hover:scale-105">
+              Learn More
+            </a>
+            <a href="/exhibition" className="w-40 px-6 py-3 border border-green-600 text-green-600 rounded-lg hover:bg-green-900 hover:text-white transform transition-transform duration-300 hover:scale-105">
+              Our Program
+            </a>
           </div>
         </div>
       </div>
+
+      {/* Tailwind Animations */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+
+        @keyframes scrollWatcher {
+          to { transform: scaleX(1); }
+        }
+        .animate-scrollWatcher { animation: scrollWatcher linear 1s forwards; transform-origin: left; }
+      `}</style>
     </>
   );
 };
