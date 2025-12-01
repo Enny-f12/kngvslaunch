@@ -10,10 +10,11 @@ import PartnersSection from './components/landing-page/partners/Partners'
 import OurPrograms from './components/landing-page/programs/OurPrograms'
 import HeroSection from './components/landing-page/herosection/HeroSection'
 
+
 const App:React.FC = () => {
   return (
     <div>
-     
+  
       <Hero/>
       <Intro/>
       <HeroSection/>
@@ -23,6 +24,7 @@ const App:React.FC = () => {
       <GetInvolved/>
       <Faq/>
       <Footer/>
+
     </div>
   )
 }
