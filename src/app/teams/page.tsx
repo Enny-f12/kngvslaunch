@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Team from '@/components/ourteam/Team'
+import Team from '@/components/aboutsection/ourteam/Team'
 const page = () => {
   return (
     <div>

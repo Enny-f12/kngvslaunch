@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
           className="
             w-full h-[300px] sm:h-[340px]
             object-cover rounded-2xl 
-            shadow-lg  max-w-2xl
+            shadow-[0_4px_10px_rgba(21,156,9,0.5)] max-w-2xl
             transition-transform duration-300 
             hover:scale-[1.03]
           "
