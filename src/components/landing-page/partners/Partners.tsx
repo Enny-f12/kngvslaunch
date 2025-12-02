@@ -62,7 +62,7 @@ const PartnersSection: React.FC = () => {
           }
         }
         .animate-scroll {
-          animation: scroll 15s linear infinite;
+          animation: scroll 5s linear infinite;
         }
 
         @keyframes bounceIn {
@@ -75,12 +75,12 @@ const PartnersSection: React.FC = () => {
         }
 
         .animate-bounceIn {
-          animation: bounceIn 3s ease-in-out infinite;
+          animation: bounceIn 1s ease-in-out infinite;
         }
 
         @media (max-width: 768px) {
           .animate-bounceIn {
-            animation-duration: 2s;
+            animation-duration: 1s;
           }
         }
       `}</style>
