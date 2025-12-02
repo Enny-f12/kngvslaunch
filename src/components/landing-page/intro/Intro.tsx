@@ -17,7 +17,7 @@ const Intro: React.FC = () => {
 
         {/* Paragraph */}
         <p className="mt-4 md:mt-6 text-lg md:text-xl leading-relaxed max-w-6xl">
-          For seven years, KNGVS™ has created opportunities and participatory learning
+          For ten years, KNGVS™ has created opportunities and participatory learning
           experiences for children to learn through play, hands-on gardening and cooking
           activities about nutrition and how it relates to their well-being and environment.
           This programme also helps children and youths learn how to build environmental

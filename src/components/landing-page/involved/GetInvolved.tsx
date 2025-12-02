@@ -2,7 +2,7 @@ import React from "react";
 
 const GetInvolved: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full mt-0 lg:mt-30 bg-linear-to-b from-white via-green-100 to-green-200 py-28 items-center justify-center">
+    <div className="flex flex-col lg:flex-row w-full mt-0 lg:mt-30 bg-linear-to-b from-white via-green-100 to-green-200 py-10 md:py-28 items-center justify-center">
       <div className='max-w-6xl mx-auto flex flex-col md:flex-row px-6 md:px-12 lg:px-8 '>
       {/* Text Section */}
       <div className="flex flex-col">

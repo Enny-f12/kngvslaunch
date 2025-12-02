@@ -43,10 +43,10 @@ const OurPrograms: React.FC = () => {
             healthy eating habits and a deeper understanding of sustainable food practices in
             children. Through engaging activities such as vacation school, volunteer training, and
             immersive amplified kitchen experiences, kids learn to cultivate, cook, and appreciate
-            fresh, nutritious produce. The program culminates in an exciting annual exhibition where
+            fresh, nutritious produce.<span className="hidden lg:flex"> The program culminates in an exciting annual exhibition where
             participants showcase their newfound knowledge and skills. By connecting children to the
             source of their food, we inspire lifelong healthy habits while encouraging environmental
-            stewardship, teamwork, and a love for gardening and nutrition.
+            stewardship, teamwork, and a love for gardening and nutrition.</span>
           </p>
         </div>
 

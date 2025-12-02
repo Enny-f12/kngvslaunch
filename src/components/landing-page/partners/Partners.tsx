@@ -27,8 +27,8 @@ const PartnersSection: React.FC = () => {
         <p className="text-lg md:text-xl leading-relaxed max-w-6xl">
           Our partners are key to the success of our kids&apos; nutrition garden program. Collaborating with local schools,
           community groups, and nutrition experts, they provide resources and expertise that enhance our vacation school,
-          volunteer training, amplified kitchen, and annual exhibition. Together, we promote healthy eating,
-          sustainability, and community engagement, empowering children to build lifelong food skills.
+          volunteer training, amplified kitchen, and annual exhibition. <span className='hidden md:flex'> Together, we promote healthy eating,
+          sustainability, and community engagement, empowering children to build lifelong food skills.</span>
         </p>
       </div>
 

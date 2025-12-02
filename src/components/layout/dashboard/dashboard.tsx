@@ -180,7 +180,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                       ${
                         active
                           ? "bg-[#e6f6e5] text-[#159c09] border-l-4 border-[#159c09]"
-                          : "text-gray-900 hover:bg-[#f3fdf2] hover:text-[#159c09] hover:border-l-4 hover:border-[#159c09]"
+                          : "text-gray-800 hover:bg-[#f3fdf2] hover:text-[#159c09] hover:border-l-4 hover:border-[#159c09]"
                       }
                       ${sidebarCollapsed ? "justify-center border-none" : ""}`}
                     title={sidebarCollapsed ? item.name : undefined}
