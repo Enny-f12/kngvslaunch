@@ -13,11 +13,7 @@ const teamMembers: TeamMember[] = [
     role: 'Founder Of Kids Nutri Garden',
     imageUrl: '/assets/team/IMG-20240910-WA0032.jpg',
   },
-  {
-    name: 'AB',
-    role: 'Advisory Board',
-    imageUrl: '/assets/about/team/Emmanuel.jpg',
-  },
+  
   {
     name: 'Emmanuel Udoh',
     role: 'Program Officer',
@@ -27,18 +23,21 @@ const teamMembers: TeamMember[] = [
 
 const TeamSection: React.FC = () => {
   return (
-    <section className="w-full bg-gray-50 py-24 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="w-full bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda] py-24 px-6 lg:px-0 mt-30">
+      <div className="max-w-6xl mx-auto text-left">
         <header className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+          <div className="flex items-start gap-4 mb-5 md:flex-row flex-col-reverse">
+          <div className="w-10 md:w-1 h-1 md:h-10 bg-[#159c09]"></div>
+              <h2 className="text-4xl md:text-5xl font-semibold">
             Meet <span className="text-green-600">Our Team</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          </div>
+          <p className="text-gray-600 text-lg">
             Our dedicated team is passionate about empowering children to make healthy, informed choices. Through hands-on learning in nutrition and gardening, we aim to inspire the next generation to lead healthier, more sustainable lives.
           </p>
         </header>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
           {teamMembers.map((member, index) => (
             <div
               key={index}

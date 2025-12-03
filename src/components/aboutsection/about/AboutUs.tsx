@@ -13,17 +13,17 @@ const AboutUs: React.FC = () => {
       <div
         className="
           w-full 
-      flex flex-wrap flex-col md:flex-row items-center justify-center
       bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda]
-      py-16 px-5 md:px-8 lg:px-10 max-w-6xl mx-auto
-      gap-10 mt-10 md:mt-10
+      py-16 px-5
+      mt-10 md:mt-10
         "
       >
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-6">
         {/* Text Section */}
         <div className="min-w-[270px] md:min-w-[250px] text-left">
             <div className="flex items-start gap-4 mb-5 md:flex-row flex-col-reverse">
             <div className="w-10 md:w-1 h-1 md:h-10 bg-[#159c09]"></div>
-            <h2 className="text-4xl md:text-5xl font-semibold">How It Started</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold">How We Started</h2>
             </div>
       
 
@@ -38,28 +38,49 @@ const AboutUs: React.FC = () => {
             For ten years, KNGVS™ has created opportunities and participatory
             learning experiences for children to learn through play, hands-on
             gardening and cooking activities about nutrition and how it relates to
-            their well-being and environment. This programme also helps children and
-            youths learn how to build environmental literacy, creativity, critical
-            thinking, problem-solving, entrepreneurship skills, social skills, and
-            other life skills through creatively curated lesson plans implemented in
-            outdoor nutri-garden classes.
+            their well-being and environment. 
           </p>
         </div>
 
         {/* Image Section */}
-        <div className="flex-1 min-w-[280px] flex justify-center">
+        <div className="flex flex-row gap-4 items-center justify-center">
+          <Image
+            src="/assets/about/aboutsection/happy kids parents and facilitators after prog.jpg"
+            alt="Happy kids, parents and facilitators" 
+            width={3264}
+            height={2448}
+             className="
+            w-[300px] h-[400px] object-cover rounded-2xl
+            shadow-[0_4px_10px_rgba(21,156,9,0.5)]
+            transition-transform duration-300 hover:scale-110
+          "
+          />
+          <div className="flex flex-col gap-4">
           <Image
             src="/assets/about/aboutsection/happy kids parents and facilitators after prog.jpg"
             alt="Happy kids, parents and facilitators"
             width={3264}
             height={2448}
              className="
-            w-full h-[400px] object-cover rounded-2xl
+            w-[250px] h-[200px] object-cover rounded-2xl
             shadow-[0_4px_10px_rgba(21,156,9,0.5)]
             transition-transform duration-300 hover:scale-110
           "
           />
+          <Image
+            src="/assets/about/aboutsection/happy kids parents and facilitators after prog.jpg"
+            alt="Happy kids, parents and facilitators"
+            width={3264}
+            height={2448}
+             className="
+            w-[250px] h-[200px] object-cover rounded-2xl
+            shadow-[0_4px_10px_rgba(21,156,9,0.5)]
+            transition-transform duration-300 hover:scale-110
+          "
+          />
+          </div>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -68,7 +68,7 @@ export default function Contact() {
             whileHover={{ scale: 1.05 }}
             className="flex flex-col items-center text-center bg-white rounded-2xl shadow-lg p-6 border border-emerald-100 hover:shadow-emerald-200 transition relative overflow-hidden"
           >
-            <div className="text-emerald-600 text-4xl mb-4">{item.icon}</div>
+            <div className="text-emerald-500 text-4xl mb-4">{item.icon}</div>
             <h3 className="font-semibold text-xl text-gray-800 mb-2">{item.title}</h3>
             <p className="text-gray-600 whitespace-pre-line">{item.text}</p>
           </motion.div>
@@ -90,7 +90,7 @@ export default function Contact() {
               href={s.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white rounded-full transition"
+              className="w-11 h-11 flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white rounded-full transition"
             >
               {s.icon}
             </a>

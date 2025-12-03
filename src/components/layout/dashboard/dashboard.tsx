@@ -68,7 +68,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         { name: "About Us", href: "/about" },
         { name: "Advisory Board", href: "/advisory" },
         { name: "Contact Us", href: "/contact" },
-        { name: "Our Team", href: "/teams" },
+        
       ],
     },
     {
