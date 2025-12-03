@@ -6,7 +6,7 @@ const AboutUs: React.FC = () => {
     <section>
       {/* Landing Section */}
       <div className="text-center mt-15 lg:mt-30 text-black">
-        <h1 className="text-5xl md:text-6xl font-bold ">About <span className="text-green-600">Us</span></h1>
+        <h1 className="text-5xl md:text-6xl font-bold ">About <span className="text-green-600 ml-2">Us</span></h1>
       </div>
 
       {/* Story Section */}

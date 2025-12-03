@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from '@/components/program/wfd/home/Home'
+import Home from '@/components/program/wfd/Home'
 
 const page = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import AmplifiedKitchen from '@/components/program/amplified/kitchen/AmplifiedKitchen'
-import RecipeGallery from '@/components/program/amplified/pictures/RecipeGallery'
+import AmplifiedKitchen from '@/components/program/amplified/AmplifiedKitchen'
+import RecipeGallery from '@/components/program/amplified/RecipeGallery'
 const page = () => {
   return (
     <div>

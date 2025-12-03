@@ -1,6 +1,6 @@
 import React from 'react'
-import Training from '@/components/program/Trainings/training/Training'
-import TrainingGallerySection from '@/components/program/Trainings/session/Session'
+import Training from '@/components/program/Trainings/Training'
+import TrainingGallerySection from '@/components/program/Trainings/Session'
 
 const page = () => {
   return (
