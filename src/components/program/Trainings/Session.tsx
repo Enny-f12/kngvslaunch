@@ -22,8 +22,9 @@ const TrainingGallerySection: React.FC = () => (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <h3 className="text-3xl font-bold text-gray-800 mb-4">
+        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
           Our Training Session
+          <span className="block w-20 h-1 bg-green-500 rounded mx-auto mt-3"></span>
         </h3>
         <p className="text-lg text-gray-600 leading-relaxed">
           Volunteer training equips individuals with the necessary skills and knowledge to effectively contribute.

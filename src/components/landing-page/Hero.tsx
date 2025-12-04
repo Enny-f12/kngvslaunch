@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* Buttons */}
-          <div className="hidden md:flex flex-row gap-4 sm:gap-8 flex-wrap justify-center">
+          <div className="hidden gap-4 sm:gap-8 flex-wrap justify-center">
             <a href="/about" className="w-40 px-6 py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-900 hover:text-green-600 transform transition-transform duration-300 hover:scale-105">
               Learn More
             </a>

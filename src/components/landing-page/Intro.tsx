@@ -27,7 +27,7 @@ const Intro: React.FC = () => {
         </p>
 
         {/* Image Frames Section */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 h-[200px]">
           
           {/* Grow it */}
           <div

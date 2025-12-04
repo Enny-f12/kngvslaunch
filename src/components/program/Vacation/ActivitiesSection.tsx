@@ -22,7 +22,7 @@ const activities: Activity[] = [
     id: 'garden',
     title: 'School Garden Sessions',
     description:
-      'We offer hands-on gardening skills by teaching children how to plant, nurture, and water seeds such as cucumbers, tomatoes, and other vegetables. They learn the importance of creating garden beds and how to properly plant seeds for optimal growth. Through this experience, children develop an understanding of plant care, from soil preparation to harvesting. Our school garden program emphasizes responsibility, patience, and teamwork, as children actively engage with nature. In addition to gardening, they also gain valuable knowledge about the benefits of fresh, homegrown produce, promoting healthy eating habits and a lifelong appreciation for the environment.',
+      'We offer hands-on gardening skills by teaching children how to plant, nurture, and water seeds such as cucumbers, tomatoes, and other vegetables. They learn the importance of creating garden beds and how to properly plant seeds for optimal growth. Through this experience, children develop an understanding of plant care, from soil preparation to harvesting. Our school garden program emphasizes responsibility, patience, and teamwork, as children actively engage with nature.',
     image: '/assets/Program/vacation/KNGVS Pro_20240910_120141_1.png',
     icon: '🌱',
   },
@@ -31,7 +31,7 @@ const activities: Activity[] = [
     title: 'Nutrition Education',
     description:
       'Nutrition education plays a vital role in teaching individuals, especially children, the importance of making healthy food choices. Through engaging lessons and hands-on activities, children learn about the different food groups, balanced diets, portion control, and the nutritional benefits of various fruits and vegetables. They also gain knowledge on how to read food labels, understand the impact of sugar and fats, and develop habits that support long-term health and wellness.',
-    image: '/assets/Program/vacation/IMG-20230822-WA0143.jpg',
+    image: '/assets/Program/vacation/nutri-edu.jpg',
     icon: '🍎',
   },
   {
@@ -48,7 +48,7 @@ const activities: Activity[] = [
     title: 'Creative Games and Learning Activities',
     description:
       'These sessions encourage imagination, problem-solving, and cognitive development through engaging and fun activities. Children participate in arts and crafts, storytelling, building challenges, and group games designed to foster creativity and critical thinking. They learn to express themselves, collaborate with peers, and apply their knowledge in exciting, non-traditional ways, making learning an enjoyable adventure.',
-    image: '/assets/Program/vacation/creative-games-placeholder.jpg', // Remember to update this path
+    image: '/assets/Program/vacation/creative.png', // Remember to update this path
     icon: '🎨',
   },
 ];
@@ -67,7 +67,7 @@ const ActivitiesSection: React.FC = () => {
             key={activity.id}
             className={`flex flex-col lg:flex-row ${
               index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-            } items-center gap-8 lg:gap-12 bg-white rounded-2xl p-4 md:p-8 shadow-md hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2 relative overflow-hidden`}
+            } items-center gap-8 lg:gap-12 bg-white rounded-2xl p-4 md:p-8 shadow-md hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-2 relative overflow-hidden border-t-4 border-green-800`}
           >
            
 

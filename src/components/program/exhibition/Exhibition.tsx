@@ -66,7 +66,9 @@ const Exhibition: React.FC = () => {
             {/* --- Intro Section --- */}
             <section className={`${sectionPadding}`}>
                 <div className={containerClasses}>
-                    <h2 className={titleClasses}>A Grand <span className="text-green-600">Show-and-Tell</span></h2>
+                    <h2 className={titleClasses}>A Grand <span className="text-green-600">Show-and-Tell</span>
+                    <span className="block w-20 h-1 bg-green-500 rounded mx-auto mt-3"></span>
+                    </h2>
                     <p className={subtitleClasses}>
                         The KNGVS amplified edition culminated in our exciting annual garden-to-fork exhibition and fun day on September 1, 2023. It was a grand event celebrating the journey of food from the garden to the plate.
                     </p>
@@ -96,7 +98,9 @@ const Exhibition: React.FC = () => {
             {/* --- Highlights Section --- */}
             <section className={`${sectionPadding} bg-gray-50`}> {/* Assuming --bg-light is bg-gray-50 */}
                 <div className={containerClasses}>
-                    <h2 className={titleClasses}><span className="text-green-600">Exhibition</span> Highlights</h2>
+                    <h2 className={titleClasses}><span className="text-green-600">Exhibition</span> Highlights
+                    <span className="block w-20 h-1 bg-green-500 rounded mx-auto mt-3"></span>
+                    </h2>
                     <p className={subtitleClasses}>{highlightsData.description}</p>
                     <div className={galleryGridClasses}>
                         {highlightsData.images.map((src, index) => (
@@ -115,7 +119,9 @@ const Exhibition: React.FC = () => {
             {/* --- Attendance Section --- */}
             <section className={`${sectionPadding}`}>
                 <div className={containerClasses}>
-                    <h2 className={titleClasses}>Exhibition <span className="text-green-600">Attendance</span></h2>
+                    <h2 className={titleClasses}>Exhibition <span className="text-green-600">Attendance</span>
+                    <span className="block w-20 h-1 bg-green-500 rounded mx-auto mt-3"></span>
+                    </h2>
                     <p className={subtitleClasses}>{attendanceData.description}</p>
                     <div className={galleryGridClasses}>
                         {attendanceData.images.map((src, index) => (

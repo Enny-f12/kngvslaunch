@@ -57,7 +57,7 @@ const AboutUs: React.FC = () => {
           />
           <div className="flex flex-col gap-4">
           <Image
-            src="/assets/about/aboutsection/happy kids parents and facilitators after prog.jpg"
+            src="/assets/about/history/history.JPG"
             alt="Happy kids, parents and facilitators"
             width={3264}
             height={2448}
@@ -68,7 +68,7 @@ const AboutUs: React.FC = () => {
           "
           />
           <Image
-            src="/assets/about/aboutsection/happy kids parents and facilitators after prog.jpg"
+            src="/assets/about/mission/DSC08067.JPG"
             alt="Happy kids, parents and facilitators"
             width={3264}
             height={2448}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Wfdtwo from '@/components/program/wfd/wfdtwo/Wfdtwo'
+import Wfdtwo from '@/components/program/wfd/Wfdtwo'
 
 const page = () => {
   return (

@@ -56,13 +56,13 @@ const PartnerSchools: React.FC = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         
         {/* Title */}
-        <h2 className="font-extrabold text-3xl sm:text-4xl text-green-800 text-center mb-12 relative">
+        <h2 className="font-extrabold text-3xl sm:text-4xl text-gray-800 text-center mb-12 relative">
           Schools Partnered With 
           <span className="block w-20 h-1 bg-green-500 rounded mx-auto mt-3"></span>
         </h2>
         
         {/* Responsive Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-2 justify-items-center">
           {partnerSchools.map((school) => (
             <article 
               key={school.id} 

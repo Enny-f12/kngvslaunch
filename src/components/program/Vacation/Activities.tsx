@@ -14,6 +14,7 @@ const Activities = () => {
         className="text-3xl md:text-4xl font-semibold text-center mb-12"
       >
         Our Activities Include: 
+         <span className="block w-20 h-1 bg-green-500 rounded mx-auto mt-3"></span>
       </motion.h2>
 
       <motion.ul

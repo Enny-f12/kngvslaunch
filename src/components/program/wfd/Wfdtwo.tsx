@@ -13,14 +13,14 @@ const schoolsVisited = [
 ];
 
 const photoGalleryImages = [
-  '/images/KNGVS Pro_20241223_083343_1.png',
-  '/images/KNGVS Pro_20241223_083218_1.png',
-  '/images/KNGVS Pro_20241223_083340_1.png',
-  '/images/KNGVS Pro_20241223_083400_1.png',
-  '/images/KNGVS Pro_20241223_083410_1.png',
-  '/images/KNGVS Pro_20241223_083316_1.png',
-  '/images/KNGVS Pro_20241223_083357_1.png',
-  '/images/KNGVS Pro_20241223_083252_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083343_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083218_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083340_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083400_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083410_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083316_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083357_1.png',
+  '/assets/Program/wfd/KNGVS Pro_20241223_083252_1.png',
 ];
 
 // --- Component Definition ---
@@ -43,18 +43,18 @@ const WfdEventPage: React.FC<WfdEventPageProps> = ({
         
         
         {/* .heading h2 */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-30 text-center mx-auto">
           {eventTitle}
         </h2>
       </div>
   {/* Hero Section */}
        <section className="max-w-5xl mx-auto text-center">
          <Image
-           src="/images/KNGVS Pro_20241223_083155_1.png"
+           src="/assets/Program/wfd/KNGVS Pro_20241223_083155_1.png"
            alt="KNGVS WFD"
            width={800}
            height={500}
-           className="w-full h-auto rounded-2xl shadow-lg mb-8 object-cover"
+           className="w-auto h-[400px] mx-auto rounded-2xl shadow-lg mb-8 object-contain"
          />
          </section>
       {/* --- Schools Visited Section --- */}

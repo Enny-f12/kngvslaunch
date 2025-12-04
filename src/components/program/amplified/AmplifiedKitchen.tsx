@@ -6,7 +6,7 @@ import Image from 'next/image';
 const AmplifiedKitchen: React.FC = () => {
   return (
     
-    <section className=" px-4 sm:px-12 bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda] text-gray-800 max-w-6xl mx-auto">
+    <section className=" px-4 sm:px-8 bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda] text-gray-800 max-w-6xl mx-auto">
       
      
       <div className="text-center mt-10  md:mt-15 lg:mt-20 text-black">
@@ -21,7 +21,7 @@ const AmplifiedKitchen: React.FC = () => {
          <div className="flex items-start gap-4 mb-5 md:flex-row flex-col-reverse">
             <div className="w-10 md:w-2 h-1 md:h-10 bg-[#159c09]"></div>
             <h2 className="text-3xl md:text-5xl font-semibold">
-              KNGVS amplified Nutri-Kitchen
+             Nutri-Kitchen
             </h2>
           </div>
           
@@ -51,7 +51,7 @@ const AmplifiedKitchen: React.FC = () => {
             alt="Amplified Kitchen" 
             width={429} 
             height={648}
-            className="w-full h-[300px] sm:h-[340px]
+            className="w-full h-[300px] sm:h-[380px]
             object-cover rounded-2xl 
             shadow-[0_4px_10px_rgba(21,156,9,0.5)] max-w-2xl
             transition-transform duration-300 

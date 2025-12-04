@@ -12,20 +12,25 @@ const AnnualExhibitionReport: React.FC = () => {
         <section className="min-h-screen">
             {/* .heading h2 (Main Title Block) */}
             <div className="text-center mt-15 lg:mt-30 text-black">
-        <h1 className="text-5xl md:text-6xl font-bold ">Annual<span className="text-green-600 ml-2">Exhibition</span></h1>
-      </div>
+                <h1 className="text-5xl md:text-6xl font-bold mb-12">Annual<span className="text-green-600 ml-2">Exhibition</span></h1>
+            </div>
+            <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed text-lg mb-6">
+                Every year, our Annual Exhibition brings together artists, innovators, and storytellers from across the region to celebrate creativity in all its forms.
+                Step into a journey through time — where each year tells its own story of imagination, exploration, and artistic evolution.
+                Discover how our exhibitions have grown, transformed, and inspired communities year after year.
+            </p>
 
             {/* .paragraph */}
             <div className="mx-auto flex justify-center items-center mt-10">
-                <p className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-700 md:max-w-2xl lg:max-w-xl">Click below to view the exhibition over the years:</p>
+               <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed text-lg mb-6">Click below to view the exhibition over the years:</p>
             </div>
 
             {/* .years (Links container) */}
             <div className="mx-auto flex justify-center items-center gap-6 mt-12 mb-20 max-sm:gap-4 max-sm:flex-wrap">
-                
+
                 {/* .years a (Individual Link) */}
-                <Link 
-                    href="/exhibition" 
+                <Link
+                    href="/exhibition"
                     className="
                         inline-block px-10 py-2.5 rounded-4xl
                         font-medium text-base leading-relaxed 
@@ -38,8 +43,8 @@ const AnnualExhibitionReport: React.FC = () => {
                 >
                     2024
                 </Link>
-                <Link 
-                    href="/exhibition/2023" 
+                <Link
+                    href="/exhibition/2023"
                     className="
                         inline-block px-10 py-2.5 rounded-4xl
                         font-medium text-base leading-relaxed 
@@ -52,7 +57,7 @@ const AnnualExhibitionReport: React.FC = () => {
                 >
                     2023
                 </Link>
-                
+
             </div>
 
         </section>

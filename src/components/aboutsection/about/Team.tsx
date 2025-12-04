@@ -23,9 +23,9 @@ const teamMembers: TeamMember[] = [
 
 const TeamSection: React.FC = () => {
   return (
-    <section className="w-full bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda] px-6 lg:px-0 mt-30">
-      <div className="max-w-6xl mx-auto text-left">
-        <header className="mb-16">
+    <section className="w-full bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda] pb-24 px-6 lg:px-0 mt-30">
+      <div className="max-w-6xl flex flex-row gap-4 mx-auto text-left items-center justify-center">
+        <header className="mb-16 max-w-lg">
           <div className="flex items-start gap-4 mb-5 md:flex-row flex-col-reverse">
           <div className="w-10 md:w-1 h-1 md:h-10 bg-[#159c09]"></div>
               <h2 className="text-4xl md:text-5xl font-semibold">
