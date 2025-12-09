@@ -1,5 +1,5 @@
 
-import GalleryTwo from '@/components/news/gallery/gallerytwo/GalleryTwo'
+import GalleryTwo from '@/components/news/gallery/gallery/GalleryTwo'
 const page = () => {
   return (
     <div>

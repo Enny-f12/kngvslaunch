@@ -1,4 +1,4 @@
-import GalleryThree from '@/components/news/gallery/gallerythree/GalleryThree'
+import GalleryThree from '@/components/news/gallery/gallery/GalleryThree'
 import React from 'react'
 
 const page = () => {
