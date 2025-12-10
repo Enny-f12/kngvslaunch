@@ -7,13 +7,14 @@ import NewsSection from './components/landing-page/News'
 import PartnersSection from './components/landing-page/Partners'
 import OurPrograms from './components/landing-page/OurPrograms'
 import HeroSection from './components/landing-page/HeroSection'
-
+import Welcome from '@/components/landing-page/Welcome'
 
 const App:React.FC = () => {
   return (
     <div>
   
       <Hero/>
+      <Welcome/>
       <HeroSection/>
       <OurPrograms/>
       <PartnersSection/>

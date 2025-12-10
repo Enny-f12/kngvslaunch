@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaArrowLeft, FaArrowRight, FaTimes } from 'react-icons/fa';
+import { FaArrowLeft, FaTimes } from 'react-icons/fa';
 
 const Gallery2023: React.FC = () => {
   // State for Lightbox/Modal
@@ -61,13 +61,14 @@ const Gallery2023: React.FC = () => {
             <FaArrowLeft className="mr-1" /> 2022
           </Link>
           
-          {/* Next Year (2024) */}
+          {/* Next Year (2024) 
           <Link 
             href="/gallery/galleryfour" // Link to 2024
             className="flex items-centertext-green-600 hover:text-green-800  transition duration-300"
           >
             2024 <FaArrowRight className="ml-1" />
           </Link>
+          */}
         </div>
       </div>
 
@@ -77,7 +78,7 @@ const Gallery2023: React.FC = () => {
           📸 Gallery: The Year 2023
         </h3>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {images.map((src, index) => (
             <div 
               key={index} 

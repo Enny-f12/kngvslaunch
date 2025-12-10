@@ -15,11 +15,11 @@ const ComingSoon: React.FC = () => {
                 <FaTools className="text-8xl text-green-600 mx-auto mb-6 animate-pulse" />
                 
                 <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-                    Page Under <span className="text-green-600 border-b-4 border-green-400 pb-1">Construction</span>
+                    Page Under <span className="text-green-600 border-b-4 border-green-400 pb-1">Review</span>
                 </h1>
                 
                 <p className="text-2xl mt-4 text-gray-700 font-semibold mb-8">
-                    We&#39;re working hard to bring you this content!
+                    We&#39;re working hard to bring you this feature!
                 </p>
 
                 {/* --- Detail Text --- */}

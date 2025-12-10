@@ -35,7 +35,7 @@ const WFDKNGVSPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="max-w-4xl mx-auto text-left flex items-center justify-center px-8 gap-8">
+      <section className="max-w-4xl mx-auto text-left flex flex-col md:flex-row items-center justify-center px-8 gap-8">
         <Image
           src="/assets/Program/wfd/KNGVS Pro_20241223_083155_1.png"
           alt="KNGVS WFD"

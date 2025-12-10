@@ -55,7 +55,7 @@ const RecipeGallery: React.FC = () => {
         {[
           'DSC_0374.jpg', 'DSC_0440.jpg', 'DSC_0453.jpg',
           'DSC_0537.jpg', 'DSC_1589.jpg', 'DSC_1503.jpg', 'DSC_1537.jpg',
-          'DSC_1776.jpg', 'DSC_1770.jpg', 'DSC_1767.jpg', 'DSC_1666.jpg',
+           'DSC_1770.jpg',  'DSC_1666.jpg',
           'DSC_1631.jpg', 'KNGVS Pro_20240912_144037_1.png', 'veggie cake.jpg','KNGVS Pro_20240912_144215_1.png',
         ].map((filename, index) => (
           // .galleryItem: Image wrapper with rounded corners and hover effect

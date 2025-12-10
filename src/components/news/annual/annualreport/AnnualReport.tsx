@@ -14,8 +14,8 @@ const ReportLinks: React.FC = () => {
 
         {/* --- Title Section --- */}
         <div className="mb-16 mt-10 md:mt-16">
-          <h2 className="text-6xl md:text-7xl font-extrabold text-gray-900 leading-tight">
-            Annual <span className="text-green-600 ">Reports</span>
+          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+            Annual <span className="text-green-600 border-b-4 border-green-400 pb-1 ">Reports</span>
           </h2>
           <p className="text-xl mt-4 text-green-700 font-semibold flex items-center justify-center">
              <FaChartLine className="mr-2"/> Transparency in Action

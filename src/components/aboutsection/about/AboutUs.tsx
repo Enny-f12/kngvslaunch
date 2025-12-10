@@ -15,7 +15,7 @@ const AboutUs: React.FC = () => {
           w-full 
       bg-linear-to-b from-white via-[#e6f4e6] to-[#d4efda]
       py-16 px-5
-      mt-10 md:mt-10
+       md:mt-10
         "
       >
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-6">
@@ -55,7 +55,7 @@ const AboutUs: React.FC = () => {
             transition-transform duration-300 hover:scale-110
           "
           />
-          <div className="flex flex-col gap-4">
+          <div className=" hidden md:flex flex-col gap-4">
           <Image
             src="/assets/about/history/history.JPG"
             alt="Happy kids, parents and facilitators"

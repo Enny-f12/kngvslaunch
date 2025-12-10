@@ -78,7 +78,7 @@ const Gallery2021: React.FC = () => {
           🎉 Gallery: The Year 2021
         </h3>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {images.map((src, index) => (
             <div 
               key={index} 

@@ -55,7 +55,7 @@ const OurPrograms: React.FC = () => {
           {programs.map(({ title, link, image }) => (
             <div
               key={title}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-1"
+              className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-xl transform transition-transform duration-300 hover:scale-[1.03]"
             >
               <Image
                 src={image}

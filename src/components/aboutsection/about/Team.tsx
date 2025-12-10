@@ -47,7 +47,7 @@ const TeamSection: React.FC = () => {
             </div>
             
             <p className="text-gray-600 text-lg mt-6">
-              Our dedicated team is passionate about empowering children to make healthy, informed choices. Through hands-on learning in nutrition and gardening, we aim to inspire the next generation to lead healthier, more sustainable lives. Every member brings expertise and heart to our **Nutri-Garden-2-Fork** mission.
+              Our dedicated team is passionate about empowering children to make healthy, informed choices. Through hands-on learning in nutrition and gardening, we aim to inspire the next generation to lead healthier, more sustainable lives. Every member brings expertise and heart to our Nutri-Garden-2-Fork mission.
             </p>
             
            

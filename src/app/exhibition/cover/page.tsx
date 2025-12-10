@@ -14,7 +14,7 @@ const AnnualExhibitionReport: React.FC = () => {
 
                 {/* --- Title Section --- */}
                 <div className="mb-16 mt-10 md:mt-16">
-                    <h1 className="text-6xl md:text-7xl font-extrabold text-gray-900 leading-tight">
+                    <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
                         Annual <span className="text-green-600 border-b-4 border-green-400 pb-1">Exhibition</span>
                     </h1>
                     <p className="text-xl mt-4 text-green-700 font-semibold flex items-center justify-center">
@@ -52,22 +52,10 @@ const AnnualExhibitionReport: React.FC = () => {
                             ring-4 ring-green-200 ring-offset-2
                         "
                     >
-                        2024 Archive
+                        2023 Exhibition
                     </Link>
                     
-                    {/* Link 2023 */}
-                    <Link 
-                        href="/exhibition/2023" 
-                        className="
-                            inline-flex justify-center items-center h-16 w-full sm:w-60 md:w-72 
-                            bg-white text-green-800 font-extrabold text-xl 
-                            rounded-xl shadow-lg hover:shadow-2xl hover:bg-green-50 
-                            transform hover:scale-105 transition-all duration-300 ease-in-out 
-                            ring-4 ring-green-800 ring-offset-2
-                        "
-                    >
-                        2023 Archive
-                    </Link>
+                    
 
                 </div>
             </div>

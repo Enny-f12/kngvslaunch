@@ -16,7 +16,7 @@ const WorldFoodDay: React.FC = () => {
         {/* --- Title Section --- */}
         <div className="mb-16 mt-10 md:mt-16">
           <h1 className="text-6xl md:text-7xl font-extrabold text-gray-900 leading-tight">
-            World <span className="text-green-600 ">Food Day</span>
+            World <span className="text-green-600 border-b-4 border-green-400 pb-1 ">Food Day</span>
           </h1>
           <p className="text-xl mt-4 text-green-700 font-semibold flex items-center justify-center">
              <FaGlobe className="mr-2"/> October 16th – Action for a Hunger-Free World

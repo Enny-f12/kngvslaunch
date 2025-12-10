@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
             <Image
               src="/assets/sidebar/logo.jpg"
               alt="Kids Nutri Garden Logo"
-              width={80}
-              height={80}
-              className="rounded-lg"
+              width={60}
+              height={60}
+              className="rounded-lg w-auto h-auto"
             />
             <h2 className="text-2xl font-semibold text-white">Kids Nutri Garden</h2>
           </div>

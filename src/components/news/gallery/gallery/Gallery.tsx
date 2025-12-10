@@ -16,7 +16,7 @@ const GalleryLinks: React.FC = () => {
         {/* Title Section */}
         <div className="mb-16 mt-10 md:mt-16">
           <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-            Our <span className="text-green-600  pb-1">Visual Journey</span>
+            Our <span className="text-green-600  border-b-4 border-green-400 pb-1">Visual Journey</span>
           </h2>
           <p className="text-xl mt-4 text-green-700 font-semibold">Moments Captured Over The Years</p>
         </div>
@@ -83,7 +83,7 @@ const GalleryLinks: React.FC = () => {
             2023
           </Link>
           
-          <Link 
+          {/*<Link 
             href="/gallery/galleryfour"
             className="
               inline-flex justify-center items-center h-20 w-full sm:w-60 md:w-72 
@@ -94,7 +94,7 @@ const GalleryLinks: React.FC = () => {
             "
           >
             2024
-          </Link>
+          </Link> */}
           
         </div>
       </div>

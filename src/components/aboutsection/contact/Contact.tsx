@@ -27,7 +27,7 @@ export default function Contact() {
   ];
 
   return (
-    <section className="min-h-screen bg-white flex flex-col mt-30 px-4 mx-auto">
+    <section className="min-h-screen bg-white flex flex-col mt-15 lg:mt-30 px-4 mx-auto">
     <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-24 flex justify-center text-center">
       Contact <span className="text-green-600 ml-2"> Us</span>
     </h1>
@@ -82,7 +82,7 @@ export default function Contact() {
         transition={{ delay: 0.3 }}
         className="mt-12 text-center"
       >
-        <p className="text-sm uppercase tracking-wide mb-3 text-gray-500">Follow Us</p>
+        <p className="text-sm uppercase tracking-wide mb-8 md:mb-3 text-gray-500">Follow Us</p>
         <div className="flex gap-4 justify-center">
           {socials.map((s, i) => (
             <a
